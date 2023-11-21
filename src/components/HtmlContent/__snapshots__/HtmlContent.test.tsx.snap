@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<TextComponent /> > should match snapshot 1`] = `
+exports[`<HtmlContent /> > should match snapshot 1`] = `
 .c0 {
   font-size: 2.4rem;
 }

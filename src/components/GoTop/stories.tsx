@@ -7,9 +7,6 @@ export default {
   args: {
     children: "GoTop",
   },
-  argTypes: {
-    children: { type: "string" },
-  },
 } as Meta<typeof GoTop>;
 
 export const Template = () => {

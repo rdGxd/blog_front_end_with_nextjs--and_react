@@ -1,16 +1,16 @@
 import { screen } from "@testing-library/react";
-import { TextComponent } from ".";
+import { HtmlContent } from ".";
 import { renderTheme } from "../../styles/render-theme";
 import { theme } from "../../styles/theme";
 
-describe("<TextComponent />", () => {
+describe("<HtmlContent />", () => {
   it("should render paragraph in the document", () => {
-    renderTheme(<TextComponent>texto</TextComponent>);
+    renderTheme(<HtmlContent html="texto" />);
     expect(screen.getByText("texto")).toBeInTheDocument();
   });
 
   it("should render correct paragraph sizes", () => {
-    renderTheme(<TextComponent>texto</TextComponent>);
+    renderTheme(<HtmlContent html="texto" />);
     const paragraph = screen.getByText(/texto/i);
 
     expect(paragraph).toHaveStyle({
@@ -19,7 +19,7 @@ describe("<TextComponent />", () => {
   });
 
   it("should match snapshot", () => {
-    const { container } = renderTheme(<TextComponent>texto</TextComponent>);
+    const { container } = renderTheme(<HtmlContent html="texto" />);
 
     expect(container.firstChild).toMatchSnapshot();
   });
