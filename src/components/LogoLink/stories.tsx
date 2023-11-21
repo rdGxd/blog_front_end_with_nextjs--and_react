@@ -6,14 +6,10 @@ export default {
   component: LogoLink,
   args: {
     text: "LogoLink",
-    srcImg: "assets/images/logo.svg",
+    srcImg: "assets/images/kurapika.jpeg",
     link: "https://google.com.br",
+    newTab: false,
   },
-  // argTypes: {
-  //   text: { type: "string" },
-  //   srcImg: { type: "string" },
-  //   link: { type: "string" },
-  // },
 } as Meta<typeof LogoLink>;
 
 export const ImageOnly: StoryFn<LogoLinkProps> = (args) => {

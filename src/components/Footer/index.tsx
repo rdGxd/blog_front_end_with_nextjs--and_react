@@ -1,4 +1,3 @@
-import { SectionContainer } from "../SectionContainer";
 import { TextComponent } from "../TextComponent";
 import * as Styled from "./styles";
 
@@ -9,9 +8,7 @@ export type FooterProps = {
 export const Footer = ({ html }: FooterProps) => {
   return (
     <Styled.Container>
-      <SectionContainer>
-        <TextComponent>{html}</TextComponent>
-      </SectionContainer>
+      <TextComponent>{html}</TextComponent>
     </Styled.Container>
   );
 };

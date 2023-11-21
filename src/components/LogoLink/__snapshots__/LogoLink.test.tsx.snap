@@ -15,7 +15,9 @@ exports[`<LogoLink /> > should match snapshot 1`] = `
 }
 
 .c1 >img {
-  height: 3rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
 }
 
 <h1
@@ -24,6 +26,7 @@ exports[`<LogoLink /> > should match snapshot 1`] = `
   <a
     class="c1"
     href="#target"
+    target="_self"
   >
     <img
       alt="text"
