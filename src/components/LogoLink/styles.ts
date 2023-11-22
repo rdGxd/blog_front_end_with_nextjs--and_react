@@ -1,12 +1,13 @@
+import Link from "next/link";
 import styled from "styled-components";
 
-export const Container = styled.a`
+export const Container = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
   color: inherit;
 
-  > img {
+  img {
     width: 15rem;
     height: 15rem;
     border-radius: 50%;

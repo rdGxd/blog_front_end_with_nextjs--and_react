@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Heading } from "../Heading/index";
 import * as Styled from "./styles";
 
@@ -16,12 +15,10 @@ export const LogoLink = ({ text, srcImg = "", link, newTab = false }: LogoLinkPr
   if (nextLink) {
     return (
       <Heading size="small" uppercase>
-        <Link href={link} passHref>
-          <Styled.Container target={target}>
-            {!!srcImg && <img src={srcImg} alt={text} />}
-            {!srcImg && text}
-          </Styled.Container>
-        </Link>
+        <Styled.Container href={link} passHref target={target}>
+          {!!srcImg && <img src={srcImg} alt={text} />}
+          {!srcImg && text}
+        </Styled.Container>
       </Heading>
     );
   }
