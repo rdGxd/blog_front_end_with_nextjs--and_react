@@ -10,5 +10,5 @@ export const Container = styled.a`
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
-}
+  }
 `;

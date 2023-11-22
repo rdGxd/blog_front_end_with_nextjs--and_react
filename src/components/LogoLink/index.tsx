@@ -9,12 +9,7 @@ export type LogoLinkProps = {
   newTab?: boolean;
 };
 
-export const LogoLink = ({
-  text,
-  srcImg = "",
-  link,
-  newTab = false,
-}: LogoLinkProps) => {
+export const LogoLink = ({ text, srcImg = "", link, newTab = false }: LogoLinkProps) => {
   const nextLink = link.match(/^\//) ? true : false;
   const target = newTab ? "_blank" : "_self";
 

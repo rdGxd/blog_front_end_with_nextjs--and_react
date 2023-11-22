@@ -8,20 +8,9 @@ export type HeadingProps = {
   uppercase?: boolean;
 };
 
-export const Heading = ({
-  children,
-  colorDark = true,
-  as = "h1",
-  size = "huge",
-  uppercase = false,
-}: HeadingProps) => {
+export const Heading = ({ children, colorDark = true, as = "h1", size = "huge", uppercase = false }: HeadingProps) => {
   return (
-    <Styled.Title
-      $colorDark={colorDark}
-      as={as}
-      size={size}
-      $uppercase={uppercase}
-    >
+    <Styled.Title $colorDark={colorDark} as={as} size={size} $uppercase={uppercase}>
       {children}
     </Styled.Title>
   );

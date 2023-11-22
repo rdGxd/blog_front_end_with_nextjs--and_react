@@ -12,8 +12,8 @@ export const Container = styled(Link)`
     transition: all 300ms ease-in-out;
 
     &:hover {
-    border-right: 0.5rem solid ${theme.colors.secondary};
-    color: ${theme.colors.secondary};
+      border-right: 0.5rem solid ${theme.colors.secondary};
+      color: ${theme.colors.secondary};
     }
   `}
 `;
