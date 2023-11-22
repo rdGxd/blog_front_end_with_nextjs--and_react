@@ -1,6 +1,6 @@
 import { Meta, StoryFn } from "@storybook/react";
-import { theme } from "styles/theme";
 import { MenuLink, MenuLinkProps } from ".";
+import { theme } from "../../styles/theme";
 
 export default {
   title: "MenuLink",

@@ -3,7 +3,7 @@ import { Heading } from "../Heading/index";
 import * as Styled from "./styles";
 
 export type LogoLinkProps = {
-  text: string;
+  text?: string;
   srcImg?: string;
   link: string;
   newTab?: boolean;
