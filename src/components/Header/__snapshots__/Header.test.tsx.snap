@@ -20,7 +20,7 @@ exports[`<Header /> > should match snapshot 1`] = `
   color: inherit;
 }
 
-.c3 >img {
+.c3 img {
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
@@ -57,17 +57,14 @@ exports[`<Header /> > should match snapshot 1`] = `
       class="c1 c2"
     >
       <a
+        class="c3"
         href="/"
+        target="_self"
       >
-        <a
-          class="c3"
-          target="_self"
-        >
-          <img
-            alt="Rodrigo Silva - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut arcu nibh, commodo sed quam ac, laoreet consequat diam. In commodo ut erat sit amet lobortis. Etiam sit amet maximus est."
-            src="/assets/images/kurapika.jpeg"
-          />
-        </a>
+        <img
+          alt="Rodrigo Silva - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut arcu nibh, commodo sed quam ac, laoreet consequat diam. In commodo ut erat sit amet lobortis. Etiam sit amet maximus est."
+          src="/assets/images/kurapika.jpeg"
+        />
       </a>
     </h1>
     <div
