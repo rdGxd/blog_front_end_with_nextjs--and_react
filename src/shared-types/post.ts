@@ -58,15 +58,3 @@ export type PostChildren = {
   text: string;
   type: string;
 };
-
-export type PostCover = {
-  data: {
-    id: string;
-    attributes: PostCoverAttributes;
-  };
-};
-
-export type PostCoverAttributes = {
-  alternativeText: null; // Texto alternativo (pode ser nulo) para a imagem
-  url: string; // URL da imagem de capa
-};

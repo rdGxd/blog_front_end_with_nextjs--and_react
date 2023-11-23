@@ -1,17 +1,13 @@
-import { ArticleMetaProps } from ".";
-
 const mockArticleMeta = {
   createdAt: "2023-11-20T14:23:14.605Z",
   author: {
-    data: [
-      {
-        id: "1",
-        attributes: {
-          displayName: "Rodrigo Silva",
-          slug: "rodrigo-silva",
-        },
+    data: {
+      id: "1",
+      attributes: {
+        displayName: "Rodrigo Silva",
+        slug: "rodrigo-silva",
       },
-    ],
+    },
   },
   categories: {
     data: [
@@ -31,6 +27,6 @@ const mockArticleMeta = {
       },
     ],
   },
-} as ArticleMetaProps;
+};
 
 export default mockArticleMeta;

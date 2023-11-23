@@ -16,7 +16,7 @@ export const ArticleMeta = ({ createdAt, author, categories }: ArticleMetaProps)
     <Styled.Wrapper>
       <p>
         <span>Por </span>
-        <a href={`/author/${author.data[0].attributes.slug}`}>{author.data[0].attributes.displayName}</a>
+        <a href={`/author/${author.data.attributes.slug}`}>{author.data.attributes.displayName}</a>
         <span className="separator"> | </span>
         <time dateTime={createdAt}>{formatDate(createdAt)}</time>
         <span className="separator"> | </span>
