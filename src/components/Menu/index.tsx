@@ -18,7 +18,7 @@ export type MenuProps = {
   menuLink: MenuPropsLinks[];
 };
 
-export const Menu = ({ blogName, logo, menuLink }: MenuProps) => {
+export const Menu = ({ blogName, logo, menuLink = [] }: MenuProps) => {
   const [menuVisible, setMenuVisible] = useState(false);
 
   const handleOpenCloseMenu = (event: React.MouseEvent) => {
@@ -38,7 +38,7 @@ export const Menu = ({ blogName, logo, menuLink }: MenuProps) => {
         {menuVisible ? <CloseIcon aria-label="Close menu" /> : <MenuIcon aria-label="Open menu" />}
       </Styled.OpenClose>
 
-      <Styled.Wrapper $menuVisible={menuVisible}>
+      <Styled.Wrapper $menuVisible={menuVisible} aria-hidden={!menuVisible}>
         <Styled.Nav>
           <Styled.Logo>
             <LogoLink link="/" srcImg={logo.data.attributes.url} text={blogName} />
