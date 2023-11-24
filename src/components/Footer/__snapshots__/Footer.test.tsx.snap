@@ -6,7 +6,7 @@ exports[`<Footer /> > should render 1`] = `
 }
 
 .c2 p {
-  margin: 4.0rem 0;
+  margin: 2.4rem 0;
 }
 
 .c2 a,
@@ -21,15 +21,29 @@ exports[`<Footer /> > should render 1`] = `
   filter: brightness(80%);
 }
 
+.c2 code {
+  font-family: monospace;
+  color: #dc143c;
+  font-size: 1.6rem;
+  background: #DDDDDD;
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+
 .c2 pre {
   background: #000000;
   padding: 2.4rem;
   font-family: monospace;
   color: #FFFFFF;
-  margin: 4.0rem 0;
+  margin: 2.4rem 0;
   width: 100%;
   overflow-x: auto;
   font-size: 1.6rem;
+}
+
+.c2 pre code {
+  color: inherit;
+  background: inherit;
 }
 
 .c2 img {
@@ -39,7 +53,7 @@ exports[`<Footer /> > should render 1`] = `
 .c2 .image {
   background: #DDDDDD;
   line-height: 0;
-  margin: 4.0rem 0;
+  margin: 2.4rem 0;
 }
 
 .c2 .image figcaption {
@@ -52,7 +66,7 @@ exports[`<Footer /> > should render 1`] = `
 .c2 .image-style-side {
   max-width: 50%;
   float: right;
-  margin: 2.4rem;
+  margin: 2.4rem 0;
 }
 
 .c2 hr {
@@ -62,13 +76,13 @@ exports[`<Footer /> > should render 1`] = `
 
 .c2 ul,
 .c2 ol {
-  margin: 3.2rem;
+  margin: 2.4rem 4.0rem;
 }
 
 .c2 .table {
   width: 100%;
-  overflow: hidden;
-  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 2.4rem 0;
 }
 
 .c2 table {
@@ -80,6 +94,15 @@ exports[`<Footer /> > should render 1`] = `
 .c2 table th {
   padding: 1.6rem;
   border: 0.1rem solid #DDDDDD;
+}
+
+.c2 blockquote {
+  border-left: 0.5rem solid #dc143c;
+  color: #AAAAAA;
+  filter: brightness(80%);
+  padding-left: 2.4rem;
+  font-style: italic;
+  margin: 2.4rem;
 }
 
 .c0 {

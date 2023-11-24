@@ -1,3 +1,5 @@
+import { PostContent } from "./content";
+
 export type PostData = {
   setting: {
     data: {
@@ -47,14 +49,4 @@ export type PostsAttributes = {
   title: string;
   excerpt: string;
   content: PostContent;
-};
-
-export type PostContent = {
-  type: string;
-  children: PostChildren;
-};
-
-export type PostChildren = {
-  text: string;
-  type: string;
 };
