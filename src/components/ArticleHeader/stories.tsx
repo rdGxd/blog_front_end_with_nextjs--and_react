@@ -7,6 +7,15 @@ export default {
   title: "ArticleHeader",
   component: ArticleHeader,
   args: mockArticleHeader,
+  argTypes: {
+    createdAt: {
+      control: {
+        type: "date",
+      },
+    },
+    author: { type: null },
+    categories: { type: null },
+  },
 } as Meta<typeof ArticleHeader>;
 
 export const Template: StoryFn<ArticleHeaderProps> = (args) => {
