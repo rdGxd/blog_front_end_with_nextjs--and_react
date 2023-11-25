@@ -1,14 +1,12 @@
-import { AuthorProps } from "@/shared-types/author";
-import { CategoryProps } from "@/shared-types/category";
+import { Author } from "../../types/author";
+import { Category } from "../../types/category";
 import { formatDate } from "../../utils/format-date";
 import * as Styled from "./styles";
 
 export type ArticleMetaProps = {
   createdAt: string;
-  author: AuthorProps;
-  categories: {
-    data: CategoryProps[];
-  };
+  author: Author;
+  categories: Category;
 };
 
 export const ArticleMeta = ({ createdAt, author, categories }: ArticleMetaProps) => {

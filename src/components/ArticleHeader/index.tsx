@@ -1,4 +1,4 @@
-import { CoverProps } from "@/shared-types/cover";
+import { Cover } from "@/types/cover";
 import { ArticleMeta, ArticleMetaProps } from "../ArticleMeta";
 import { Heading } from "../Heading";
 import * as Styled from "./styles";
@@ -6,7 +6,7 @@ import * as Styled from "./styles";
 export type ArticleHeaderProps = {
   title: string;
   excerpt: string;
-  cover: CoverProps;
+  cover: Cover;
 } & ArticleMetaProps;
 
 export const ArticleHeader = ({ title, excerpt, cover, author, categories, createdAt }: ArticleHeaderProps) => {

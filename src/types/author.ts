@@ -1,4 +1,4 @@
-export type AuthorProps = {
+export type Author = {
   data: {
     id: string;
     attributes: {

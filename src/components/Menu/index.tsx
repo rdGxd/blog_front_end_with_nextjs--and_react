@@ -1,4 +1,4 @@
-import { LogoProps } from "@/shared-types/logo";
+import { Logo } from "@/types/logo";
 import { Close as CloseIcon, Menu as MenuIcon } from "@styled-icons/material-outlined";
 import { useState } from "react";
 import { LogoLink } from "../LogoLink";
@@ -14,7 +14,7 @@ export type MenuPropsLinks = {
 
 export type MenuProps = {
   blogName: string;
-  logo: LogoProps;
+  logo: Logo;
   menuLink: MenuPropsLinks[];
 };
 

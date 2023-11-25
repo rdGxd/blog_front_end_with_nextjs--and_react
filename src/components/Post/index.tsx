@@ -1,11 +1,11 @@
-import { PostContent } from "@/shared-types/content";
+import { Content } from "@/types/content";
 import { ArticleHeader, ArticleHeaderProps } from "../ArticleHeader";
 import { HtmlContent } from "../HtmlContent";
 import { PostContainer } from "../PostContainer";
 import * as Styled from "./styles";
 
 export type PostProps = ArticleHeaderProps & {
-  content: PostContent[];
+  content: Content[];
 };
 
 export const Post = ({ title, author, categories, content, cover, createdAt, excerpt }: PostProps) => {
