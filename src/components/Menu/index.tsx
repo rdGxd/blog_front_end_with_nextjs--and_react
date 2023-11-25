@@ -1,21 +1,15 @@
 import { Logo } from "@/types/logo";
+import { MenuList } from "@/types/menu-list";
 import { Close as CloseIcon, Menu as MenuIcon } from "@styled-icons/material-outlined";
 import { useState } from "react";
 import { LogoLink } from "../LogoLink";
 import { MenuLink } from "../MenuLink";
 import * as Styled from "./styles";
 
-export type MenuPropsLinks = {
-  id: string;
-  link: string;
-  newTab?: boolean;
-  text: string;
-};
-
 export type MenuProps = {
   blogName: string;
   logo: Logo;
-  menuLink: MenuPropsLinks[];
+  menuLink: MenuList[];
 };
 
 export const Menu = ({ blogName, logo, menuLink = [] }: MenuProps) => {

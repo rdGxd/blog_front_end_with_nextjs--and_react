@@ -65,7 +65,7 @@ exports[`<Header /> > should match snapshot 1`] = `
       >
         <img
           alt="Rodrigo Silva - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut arcu nibh, commodo sed quam ac, laoreet consequat diam. In commodo ut erat sit amet lobortis. Etiam sit amet maximus est."
-          src="/assets/images/kurapika.jpeg"
+          src="assets/images/kurapika.jpeg"
         />
       </a>
     </h1>
