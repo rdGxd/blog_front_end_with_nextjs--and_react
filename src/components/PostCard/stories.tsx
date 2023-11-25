@@ -6,15 +6,6 @@ export default {
   title: "PostCard",
   component: PostCard,
   args: mockPostCard,
-  argTypes: {
-    createdAt: {
-      control: {
-        type: "date",
-      },
-    },
-    author: { type: null },
-    categories: { type: null },
-  },
 } as Meta<typeof PostCard>;
 
 export const Template: StoryFn<PostCardProps> = (args) => {

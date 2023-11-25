@@ -4,13 +4,15 @@ import { Heading } from "../Heading";
 import * as Styled from "./styles";
 
 export type PostCardProps = {
-  title: string;
-  excerpt: string;
-  cover: Cover;
-  slug: string;
+  attributes: {
+    title: string;
+    excerpt: string;
+    cover: Cover;
+    slug: string;
+  };
 };
 
-export const PostCard = ({ title, cover, excerpt, slug }: PostCardProps) => {
+export const PostCard = ({ attributes: { cover, excerpt, slug, title } }: PostCardProps) => {
   return (
     <Styled.Wrapper>
       <Link href={`/post/${slug}`}>
