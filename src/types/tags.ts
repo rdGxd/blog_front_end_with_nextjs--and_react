@@ -1,8 +1,8 @@
-export type Tags = {
-  data: TagsInfos[];
+export type PostTag = {
+  tags: TagsInfos[];
 };
 
-type TagsInfos = {
+export type TagsInfos = {
   id: string;
   attributes: TagAttributes;
 };

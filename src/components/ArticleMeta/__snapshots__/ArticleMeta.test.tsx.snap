@@ -15,11 +15,6 @@ exports[`<ArticleMeta /> > should match snapshot 1`] = `
   content: "";
 }
 
-.c0 a {
-  text-decoration: none;
-  transition: all 300ms ease-in-out;
-}
-
 .c0 a:hover {
   filter: brightness(50%);
 }

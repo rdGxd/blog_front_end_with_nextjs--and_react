@@ -1,4 +1,4 @@
-export type MenuList = {
+export type MenuPropsLinks = {
   id: string;
   link: string;
   newTab?: boolean;

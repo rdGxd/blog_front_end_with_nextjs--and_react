@@ -13,9 +13,7 @@ export const ArticleHeader = ({ title, excerpt, cover, author, categories, creat
   return (
     <Styled.Wrapper>
       <Heading size="huge">{title}</Heading>
-      <Styled.Excerpt>
-        <p>{excerpt}</p>
-      </Styled.Excerpt>
+      <Styled.Excerpt>{excerpt}</Styled.Excerpt>
 
       <Styled.Cover src={cover.data.attributes.url} alt={title} />
       <ArticleMeta author={author} categories={categories} createdAt={createdAt} />

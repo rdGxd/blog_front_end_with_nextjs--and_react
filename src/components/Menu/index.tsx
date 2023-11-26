@@ -1,5 +1,5 @@
 import { Logo } from "@/types/logo";
-import { MenuList } from "@/types/menu-list";
+import { MenuPropsLinks } from "@/types/menu-props-links";
 import { Close as CloseIcon, Menu as MenuIcon } from "@styled-icons/material-outlined";
 import { useState } from "react";
 import { LogoLink } from "../LogoLink";
@@ -9,7 +9,7 @@ import * as Styled from "./styles";
 export type MenuProps = {
   blogName: string;
   logo: Logo;
-  menuLink: MenuList[];
+  menuLink: MenuPropsLinks[];
 };
 
 export const Menu = ({ blogName, logo, menuLink = [] }: MenuProps) => {

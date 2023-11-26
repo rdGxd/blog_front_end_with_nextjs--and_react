@@ -37,6 +37,8 @@ export const GlobalStyles = createGlobalStyle`
 
   a {
     color: ${({ theme }) => theme.colors.secondary};
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
   }
 
   .table {

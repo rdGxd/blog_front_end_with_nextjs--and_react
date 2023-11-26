@@ -9,7 +9,6 @@ exports[`<HtmlContent /> > should match snapshot 1`] = `
   margin: 2.4rem 0;
 }
 
-.c0 a,
 .c0 a:visited,
 .c0 a:link {
   color: #dc143c;

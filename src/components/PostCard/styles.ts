@@ -10,9 +10,7 @@ export const Wrapper = styled.div`
     }
 
     a {
-      text-decoration: none;
       color: inherit;
-      transition: all 300ms ease-in-out;
     }
 
     &:hover a {

@@ -15,11 +15,6 @@ exports[`<ArticleHeader /> > should render heading, excerpt, cover img and meta 
   content: "";
 }
 
-.c5 a {
-  text-decoration: none;
-  transition: all 300ms ease-in-out;
-}
-
 .c5 a:hover {
   filter: brightness(50%);
 }
@@ -71,9 +66,7 @@ exports[`<ArticleHeader /> > should render heading, excerpt, cover img and meta 
     <p
       class="c3"
     >
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta augue quis ligula vehicula elementum. Pellentesque convallis hendrerit est a auctor.
-      </p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta augue quis ligula vehicula elementum. Pellentesque convallis hendrerit est a auctor.
     </p>
     <img
       alt="2PAPAPA"

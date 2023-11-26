@@ -71,7 +71,6 @@ export const OpenClose = styled.a<MenuBehaviorProps>`
     width: 3rem;
     height: 3rem;
     left: 26rem;
-    transition: all 300ms ease-in-out;
     ${buttonChanger($menuVisible, theme)}
   `}
 `;

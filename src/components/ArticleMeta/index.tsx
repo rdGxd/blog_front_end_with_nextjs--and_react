@@ -22,7 +22,7 @@ export const ArticleMeta = ({ createdAt, author, categories }: ArticleMetaProps)
         <span className="categories">
           {categories.data.map((category) => {
             return (
-              <span key={`article-meta-cat-${category.id}`}>
+              <span key={`article-meta-cat-${category.attributes.slug}`}>
                 <a href={`/category/${category.attributes.slug}`}>{category.attributes.displayName}</a>
               </span>
             );

@@ -15,9 +15,7 @@ exports[`<PostGrid /> > should match snapshot 1`] = `
 }
 
 .c2 a {
-  text-decoration: none;
   color: inherit;
-  transition: all 300ms ease-in-out;
 }
 
 .c2:hover a {

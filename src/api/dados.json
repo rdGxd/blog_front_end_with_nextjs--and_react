@@ -205,6 +205,13 @@
                     "displayName": "DE",
                     "slug": "de"
                   }
+                },
+                {
+                  "id": "7",
+                  "attributes": {
+                    "displayName": "BR",
+                    "slug": "br"
+                  }
                 }
               ]
             },

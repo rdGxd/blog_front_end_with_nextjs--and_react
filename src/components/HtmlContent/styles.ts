@@ -8,7 +8,6 @@ export const Container = styled.div`
       margin: ${theme.spacings.medium} 0;
     }
 
-    a,
     a:visited,
     a:link {
       color: ${theme.colors.secondary};

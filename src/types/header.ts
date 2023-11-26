@@ -1,9 +1,9 @@
 import { Logo } from "./logo";
-import { MenuList } from "./menu-list";
+import { MenuPropsLinks } from "./menu-props-links";
 
 export type HeaderAttributes = {
   blogName: string;
   blogDescription: string;
   logo: Logo;
-  menuLink: MenuList[];
+  menuLink: MenuPropsLinks[];
 };

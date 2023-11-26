@@ -7,7 +7,6 @@ import { theme } from "../src/styles/theme";
 /** @type { import('@storybook/react').Preview } */
 const preview: Preview = {
   parameters: {
-    layout: "fullscreen",
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
       matchers: {

@@ -14,13 +14,8 @@ export const Wrapper = styled.div`
       content: "";
     }
 
-    a {
-      text-decoration: none;
-      transition: all 300ms ease-in-out;
-
-      &:hover {
-        filter: brightness(50%);
-      }
+    a:hover {
+      filter: brightness(50%);
     }
   `}
 `;
