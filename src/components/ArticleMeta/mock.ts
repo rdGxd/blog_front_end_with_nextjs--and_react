@@ -1,32 +1,12 @@
+import { ArticleMetaProps } from ".";
+import { data } from "../../api/dados.json";
+
+const { categories, author, createdAt } = data.posts.data[0].attributes;
+
 const mockArticleMeta = {
-  createdAt: "2023-11-20T14:23:14.605Z",
-  author: {
-    data: {
-      id: "1",
-      attributes: {
-        displayName: "Rodrigo Silva",
-        slug: "rodrigo-silva",
-      },
-    },
-  },
-  categories: {
-    data: [
-      {
-        id: "4",
-        attributes: {
-          displayName: "Python",
-          slug: "python",
-        },
-      },
-      {
-        id: "4",
-        attributes: {
-          displayName: "TS",
-          slug: "TS",
-        },
-      },
-    ],
-  },
-};
+  createdAt,
+  categories: categories.data,
+  author,
+} as ArticleMetaProps;
 
 export default mockArticleMeta;

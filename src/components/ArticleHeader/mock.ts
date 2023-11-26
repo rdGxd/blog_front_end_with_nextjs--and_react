@@ -6,7 +6,7 @@ const { title, excerpt, cover, author, categories, createdAt } = data.posts.data
 const mockArticleHeader = {
   title,
   author,
-  categories,
+  categories: categories.data,
   cover,
   createdAt,
   excerpt,

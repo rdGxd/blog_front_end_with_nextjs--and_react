@@ -18,6 +18,11 @@ describe("<ArticleMeta />", () => {
     expect(screen.getByText("20 de nov. de 2023")).toHaveAttribute("datetime", mockArticleMeta.createdAt);
   });
 
+  it("should match snapshot with no author and categories", () => {
+    const { container } = renderTheme(<ArticleMeta {...mockArticleMeta} author={undefined} categories={undefined} />);
+    expect(container).toMatchSnapshot();
+  });
+
   it("should match snapshot", () => {
     const { container } = renderTheme(<ArticleMeta {...mockArticleMeta} />);
 

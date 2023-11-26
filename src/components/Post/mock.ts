@@ -6,7 +6,7 @@ const { title, createdAt, excerpt, content, cover, categories, author } = data.p
 const mockPost = {
   createdAt,
   cover,
-  categories,
+  categories: categories.data,
   author,
   title,
   excerpt,
