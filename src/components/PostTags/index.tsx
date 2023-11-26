@@ -2,9 +2,13 @@ import { PostTag } from "@/types/tags";
 import Link from "next/link";
 import * as Styled from "./styles";
 
-export type PostTagsProps = PostTag;
+export type PostTagsProps = {
+  tags?: PostTag[];
+};
 
-export const PostTags = ({ tags }: PostTagsProps) => {
+export const PostTags = ({ tags = [] }: PostTagsProps) => {
+  if (tags.length === 0) return null;
+
   return (
     <Styled.Wrapper>
       tags:{" "}

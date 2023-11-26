@@ -17,4 +17,10 @@ describe("<PostTags/>", () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it("should match snapshot with no tags", () => {
+    const { container } = renderTheme(<PostTags {...mockPostTags} tags={undefined} />);
+
+    expect(container).toMatchSnapshot();
+  });
 });
