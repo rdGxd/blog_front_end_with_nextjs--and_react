@@ -1,3 +1,4 @@
+import { FooterType } from "./footer";
 import { Logo } from "./logo";
 import { MenuPropsLinks } from "./menu-props-links";
 
@@ -6,4 +7,5 @@ export type HeaderAttributes = {
   blogDescription: string;
   logo: Logo;
   menuLink: MenuPropsLinks[];
+  footer: FooterType[];
 };

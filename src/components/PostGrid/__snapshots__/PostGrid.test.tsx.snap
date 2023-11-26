@@ -61,114 +61,6 @@ exports[`<PostGrid /> > should match snapshot 1`] = `
         class="c2"
       >
         <a
-          href="/post/2-papapa"
-        >
-          <img
-            alt="2PAPAPA"
-            class="c3"
-            src="https://res.cloudinary.com/dccldzodg/image/upload/v1700489865/1213_78bc74760f.jpg"
-          />
-        </a>
-        <h2
-          class="c4 c5"
-        >
-          <a
-            href="/post/2-papapa"
-          >
-            2PAPAPA
-          </a>
-        </h2>
-        <p
-          class=""
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta augue quis ligula vehicula elementum. Pellentesque convallis hendrerit est a auctor.
-        </p>
-      </div>
-      <div
-        class="c2"
-      >
-        <a
-          href="/post/3-papapa"
-        >
-          <img
-            alt="3PAPAPA"
-            class="c3"
-            src="https://res.cloudinary.com/dccldzodg/image/upload/v1700489959/1325363_6dfc0b7add.png"
-          />
-        </a>
-        <h2
-          class="c4 c5"
-        >
-          <a
-            href="/post/3-papapa"
-          >
-            3PAPAPA
-          </a>
-        </h2>
-        <p
-          class=""
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta augue quis ligula vehicula elementum. Pellentesque convallis hendrerit est a auctor.
-        </p>
-      </div>
-      <div
-        class="c2"
-      >
-        <a
-          href="/post/4-papapa"
-        >
-          <img
-            alt="4PAPAPA"
-            class="c3"
-            src="https://res.cloudinary.com/dccldzodg/image/upload/v1700490202/uma_pintura_de_um_lago_de_montanha_com_uma_montanha_ao_fundo_188544_9126_bc5fa577b5.webp"
-          />
-        </a>
-        <h2
-          class="c4 c5"
-        >
-          <a
-            href="/post/4-papapa"
-          >
-            4PAPAPA
-          </a>
-        </h2>
-        <p
-          class=""
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-      </div>
-      <div
-        class="c2"
-      >
-        <a
-          href="/post/5-papa-pa"
-        >
-          <img
-            alt="5PAPAPa"
-            class="c3"
-            src="https://res.cloudinary.com/dccldzodg/image/upload/v1700490200/pexels_pixabay_36717_154aaae2b0.jpg"
-          />
-        </a>
-        <h2
-          class="c4 c5"
-        >
-          <a
-            href="/post/5-papa-pa"
-          >
-            5PAPAPa
-          </a>
-        </h2>
-        <p
-          class=""
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-      </div>
-      <div
-        class="c2"
-      >
-        <a
           href="/post/6-papapa"
         >
           <img
@@ -277,6 +169,33 @@ exports[`<PostGrid /> > should match snapshot 1`] = `
         class="c2"
       >
         <a
+          href="/post/2-papapa"
+        >
+          <img
+            alt="2PAPAPA"
+            class="c3"
+            src="https://res.cloudinary.com/dccldzodg/image/upload/v1700489865/1213_78bc74760f.jpg"
+          />
+        </a>
+        <h2
+          class="c4 c5"
+        >
+          <a
+            href="/post/2-papapa"
+          >
+            2PAPAPA
+          </a>
+        </h2>
+        <p
+          class=""
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta augue quis ligula vehicula elementum. Pellentesque convallis hendrerit est a auctor.
+        </p>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
           href="/post/10-papapa"
         >
           <img
@@ -325,6 +244,87 @@ exports[`<PostGrid /> > should match snapshot 1`] = `
           class=""
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta augue quis ligula vehicula elementum.
+        </p>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
+          href="/post/3-papapa"
+        >
+          <img
+            alt="3PAPAPA"
+            class="c3"
+            src="https://res.cloudinary.com/dccldzodg/image/upload/v1700489959/1325363_6dfc0b7add.png"
+          />
+        </a>
+        <h2
+          class="c4 c5"
+        >
+          <a
+            href="/post/3-papapa"
+          >
+            3PAPAPA
+          </a>
+        </h2>
+        <p
+          class=""
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta augue quis ligula vehicula elementum. Pellentesque convallis hendrerit est a auctor.
+        </p>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
+          href="/post/4-papapa"
+        >
+          <img
+            alt="4PAPAPA"
+            class="c3"
+            src="https://res.cloudinary.com/dccldzodg/image/upload/v1700490202/uma_pintura_de_um_lago_de_montanha_com_uma_montanha_ao_fundo_188544_9126_bc5fa577b5.webp"
+          />
+        </a>
+        <h2
+          class="c4 c5"
+        >
+          <a
+            href="/post/4-papapa"
+          >
+            4PAPAPA
+          </a>
+        </h2>
+        <p
+          class=""
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
+          href="/post/5-papa-pa"
+        >
+          <img
+            alt="5PAPAPa"
+            class="c3"
+            src="https://res.cloudinary.com/dccldzodg/image/upload/v1700490200/pexels_pixabay_36717_154aaae2b0.jpg"
+          />
+        </a>
+        <h2
+          class="c4 c5"
+        >
+          <a
+            href="/post/5-papa-pa"
+          >
+            5PAPAPa
+          </a>
+        </h2>
+        <p
+          class=""
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
       </div>
     </div>

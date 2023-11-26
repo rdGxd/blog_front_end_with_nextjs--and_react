@@ -36,27 +36,27 @@ exports[`<PostCard /> > should match snapshot 1`] = `
     class="c0"
   >
     <a
-      href="/post/2-papapa"
+      href="/post/6-papapa"
     >
       <img
-        alt="2PAPAPA"
+        alt="6PAPAPA"
         class="c1"
-        src="https://res.cloudinary.com/dccldzodg/image/upload/v1700489865/1213_78bc74760f.jpg"
+        src="https://res.cloudinary.com/dccldzodg/image/upload/v1700490199/360_F_571067620_JS_5_T5_Tk_Dtu3gf8_Wqm78_Ko_JRF_1vob_Pvo6_1dff1a52c6.jpg"
       />
     </a>
     <h2
       class="c2 c3"
     >
       <a
-        href="/post/2-papapa"
+        href="/post/6-papapa"
       >
-        2PAPAPA
+        6PAPAPA
       </a>
     </h2>
     <p
       class=""
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta augue quis ligula vehicula elementum. Pellentesque convallis hendrerit est a auctor.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     </p>
   </div>
 </div>

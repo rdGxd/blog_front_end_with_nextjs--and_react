@@ -55,7 +55,7 @@ exports[`<Menu /> > should match snapshot 1`] = `
   left: 0;
   transition: all 300ms ease-in-out;
   overflow-y: auto;
-  left: -31rem;
+  left: -35rem;
   overflow-y: hidden;
 }
 

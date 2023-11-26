@@ -38,7 +38,7 @@ exports[`<ArticleMeta /> > should match snapshot 1`] = `
          | 
       </span>
       <time
-        datetime="2023-11-20T14:23:14.605Z"
+        datetime="2023-11-20T14:26:29.353Z"
       >
         20 de nov. de 2023
       </time>
@@ -88,7 +88,7 @@ exports[`<ArticleMeta /> > should match snapshot with no author and categories 1
   >
     <p>
       <time
-        datetime="2023-11-20T14:23:14.605Z"
+        datetime="2023-11-20T14:26:29.353Z"
       >
         20 de nov. de 2023
       </time>

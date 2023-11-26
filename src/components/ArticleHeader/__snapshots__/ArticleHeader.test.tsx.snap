@@ -61,17 +61,17 @@ exports[`<ArticleHeader /> > should render heading, excerpt, cover img and meta 
     <h1
       class="c1 c2"
     >
-      2PAPAPA
+      6PAPAPA
     </h1>
     <p
       class="c3"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta augue quis ligula vehicula elementum. Pellentesque convallis hendrerit est a auctor.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     </p>
     <img
-      alt="2PAPAPA"
+      alt="6PAPAPA"
       class="c4"
-      src="https://res.cloudinary.com/dccldzodg/image/upload/v1700489865/1213_78bc74760f.jpg"
+      src="https://res.cloudinary.com/dccldzodg/image/upload/v1700490199/360_F_571067620_JS_5_T5_Tk_Dtu3gf8_Wqm78_Ko_JRF_1vob_Pvo6_1dff1a52c6.jpg"
     />
     <div
       class="c5"
@@ -91,7 +91,7 @@ exports[`<ArticleHeader /> > should render heading, excerpt, cover img and meta 
            | 
         </span>
         <time
-          datetime="2023-11-20T14:23:14.605Z"
+          datetime="2023-11-20T14:26:29.353Z"
         >
           20 de nov. de 2023
         </time>

@@ -208,17 +208,17 @@ exports[`<Post /> > should render header, excerpt, cover, metadata and post 1`] 
         <h1
           class="c2 c3"
         >
-          2PAPAPA
+          6PAPAPA
         </h1>
         <p
           class="c4"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta augue quis ligula vehicula elementum. Pellentesque convallis hendrerit est a auctor.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
         <img
-          alt="2PAPAPA"
+          alt="6PAPAPA"
           class="c5"
-          src="https://res.cloudinary.com/dccldzodg/image/upload/v1700489865/1213_78bc74760f.jpg"
+          src="https://res.cloudinary.com/dccldzodg/image/upload/v1700490199/360_F_571067620_JS_5_T5_Tk_Dtu3gf8_Wqm78_Ko_JRF_1vob_Pvo6_1dff1a52c6.jpg"
         />
         <div
           class="c6"
@@ -238,7 +238,7 @@ exports[`<Post /> > should render header, excerpt, cover, metadata and post 1`] 
                | 
             </span>
             <time
-              datetime="2023-11-20T14:23:14.605Z"
+              datetime="2023-11-20T14:26:29.353Z"
             >
               20 de nov. de 2023
             </time>
@@ -273,53 +273,25 @@ exports[`<Post /> > should render header, excerpt, cover, metadata and post 1`] 
           <strong>
             definitiones
           </strong>
-           (
-          <i>
-            React
-          </i>
-          ) sed cu - 
-          <u>
-            Otávio Miranda
-          </u>
-          . Sea 
-          <code>
-            useEffect
-          </code>
-          , useState dicat fabulas 
+           (Tech) sed cu - João. Sea Object Destructuring, useState dicat fabulas 
           <a
-            href="https://gist.github.com/luizomf/e7cf0c3d172801225cce694681ecb0ad"
+            href="\\\\\\"https://gist.github.com/luizomf/e7cf0c3d172801225cce694681ecb0ad\\\\\\""
           >
             consetetur
           </a>
            no, odio deseruisse assueverit mei eu, vis probo nonumes molestie id. Ipsum movet liberavisse an mea, diceret vituperata ne his, delenit apeirian quo ea. Imperdiet percipitur te eos. Per ludus aliquam cu. 
           <a
-            href="https://gist.github.com/luizomf/e7cf0c3d172801225cce694681ecb0ad"
+            href="\\\\\\"https://gist.github.com/luizomf/e7cf0c3d172801225cce694681ecb0ad\\\\\\""
           >
             Eos ex tincidunt necessitatibus, timeam theophrastus mel cu
           </a>
-          . La.
+          .
         </p>
         <pre>
           <code
-            class="language-plaintext"
+            class="\\\\\\"language-plaintext\\\\\\""
           >
-            import { useEffect, useRef, useState } from 'react';
-
-const useMyHook = (cb, delay = 1000) =&gt; {
-  const savedCb = useRef();
-
-  useEffect(() =&gt; {
-    savedCb.current = cb;
-  }, [cb]);
-
-  useEffect(() =&gt; {
-    const interval = setInterval(() =&gt; {
-      savedCb.current();
-    }, delay);
-
-    return () =&gt; clearInterval(interval);
-  }, [delay]);
-};
+            import { useEffect, useRef, useState } from 'react';\\n\\nconst useMyHook = (cb, delay = 1000) =&gt; {\\n  const savedCb = useRef();\\n\\n  useEffect(() =&gt; {\\n    savedCb.current = cb;\\n  }, [cb]);\\n\\n  useEffect(() =&gt; {\\n    const interval = setInterval(() =&gt; {\\n      savedCb.current();\\n    }, delay);\\n\\n    return () =&gt; clearInterval(interval);\\n  }, [delay]);\\n};
           </code>
         </pre>
         <p>
@@ -329,13 +301,13 @@ const useMyHook = (cb, delay = 1000) =&gt; {
           </i>
            exerci 
           <span
-            style="background-color:hsl(60,75%,60%);"
+            style="\\\\\\"background-color:hsl(60,75%,60%);\\\\\\""
           >
             dolores
           </span>
           , his no 
           <span
-            style="color:hsl(270,75%,60%);"
+            style="\\\\\\"color:hsl(270,75%,60%);\\\\\\""
           >
             repudiare
           </span>
@@ -365,7 +337,7 @@ const useMyHook = (cb, delay = 1000) =&gt; {
           0
         </p>
         <p
-          style="text-align:center;"
+          style="\\\\\\"text-align:center;\\\\\\""
         >
           <strong>
             Center: 
@@ -376,7 +348,7 @@ const useMyHook = (cb, delay = 1000) =&gt; {
           Fugit aliquip erroribus eu eam, an mel vidit doctus. Vis nobis veritus maluisset id, nonumy adversarium neglegentur est ut. Tation persius pri eu, modo minim fastidii mei no. Ad tota pertinax definiebas eam.
         </p>
         <p
-          style="text-align:right;"
+          style="\\\\\\"text-align:right;\\\\\\""
         >
           <strong>
             Right:
@@ -387,7 +359,7 @@ const useMyHook = (cb, delay = 1000) =&gt; {
           Quod oblique mei ne, cetero delicatissimi sea cu, cu est harum dicit verterem. Tota forensibus ut usu, luptatum dignissim persecuti vel ex. Mea nostrud instructior cu, et referrentur theophrastus eum. Pro in iuvaret senserit. In persius explicari conceptam nec, in populo ponderum consequat vis. Gloriatur conclusionemque no qui, vitae nominati nec te, laoreet torquatos accommodare ex qui. Eu natum mediocritatem eos, cum ex alia oportere.
         </p>
         <p
-          style="text-align:justify;"
+          style="\\\\\\"text-align:justify;\\\\\\""
         >
           <strong>
             Justify:
@@ -410,14 +382,17 @@ const useMyHook = (cb, delay = 1000) =&gt; {
           Now keep going…
         </p>
         <figure
-          class="image"
+          class="\\\\\\"image\\\\\\""
         >
           <a
-            href="https://gist.github.com/luizomf/e7cf0c3d172801225cce694681ecb0ad"
+            href="\\\\\\"https://gist.github.com/luizomf/e7cf0c3d172801225cce694681ecb0ad\\\\\\""
           >
             <img
-              alt="O alt text da imagem"
-              src="https://res.cloudinary.com/dlizakp2a/image/upload/v1614696630/Frozen_sunset_on_the_lake_by_Manuel_Arslanyan_9f9cd8ea10.jpg"
+              alt="\\\\\\"O"
+              da=""
+              imagem\\"=""
+              src="\\\\\\"https://res.cloudinary.com/dlizakp2a/image/upload/v1614696630/Frozen_sunset_on_the_lake_by_Manuel_Arslanyan_9f9cd8ea10.jpg\\\\\\""
+              text=""
             />
           </a>
           <figcaption>
@@ -428,11 +403,15 @@ const useMyHook = (cb, delay = 1000) =&gt; {
           Munere euripidis an sed, usu ne consul soluta utamur. Bonorum equidem placerat eu cum, tantas quidam duo et. Pro soleat quaestio ne, ut nam wisi vocibus inciderint, ex his maiorum mnesarchum. Et est wisi primis, id vel odio alienum voluptatibus. Veri doctus offendit vim ea. Has nemore prompta inciderint ei, no sea expetendis dissentiet. Copiosae delicatissimi an sea, id cum agam clita nostro, tale tincidunt delicatissimi ei eos.
         </p>
         <figure
-          class="image image-style-side"
+          class="\\\\\\"image"
+          image-style-side\\"=""
         >
           <img
-            alt="Uma imagem à direita"
-            src="https://res.cloudinary.com/dlizakp2a/image/upload/v1614696630/Frozen_sunset_on_the_lake_by_Manuel_Arslanyan_9f9cd8ea10.jpg"
+            alt="\\\\\\"Uma"
+            direita\\"=""
+            imagem=""
+            src="\\\\\\"https://res.cloudinary.com/dlizakp2a/image/upload/v1614696630/Frozen_sunset_on_the_lake_by_Manuel_Arslanyan_9f9cd8ea10.jpg\\\\\\""
+            à=""
           />
           <figcaption>
             Uma imagem à direita
@@ -509,7 +488,7 @@ const useMyHook = (cb, delay = 1000) =&gt; {
           A think that's it…
         </p>
         <figure
-          class="table"
+          class="\\\\\\"table\\\\\\""
         >
           <table>
             <thead>
@@ -650,10 +629,10 @@ const useMyHook = (cb, delay = 1000) =&gt; {
           A video:
         </p>
         <figure
-          class="media"
+          class="\\\\\\"media\\\\\\""
         >
           <oembed
-            url="https://www.youtube.com/watch?v=oLmRV25eQvo"
+            url="\\\\\\"https://www.youtube.com/watch?v=oLmRV25eQvo\\\\\\""
           />
         </figure>
         <p>

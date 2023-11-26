@@ -6,7 +6,7 @@ type MenuBehaviorProps = {
 };
 
 const wrapperChanger = (menuVisible: MenuBehaviorProps["$menuVisible"], theme: DefaultTheme) => css`
-  left: ${menuVisible ? "0" : "-31rem"};
+  left: ${menuVisible ? "0" : "-35rem"};
   overflow-y: ${menuVisible ? "auto" : "hidden"};
 
   @media ${theme.media.lteMedium} {
