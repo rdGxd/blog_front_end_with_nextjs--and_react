@@ -344,6 +344,13 @@ exports[`<Base /> > should render base elements 1`] = `
         >
           #TESTE
         </a>
+        <a
+          class="c8"
+          href="TESTE2"
+          target="_self"
+        >
+          #TESTE2
+        </a>
       </nav>
     </div>
     <header
