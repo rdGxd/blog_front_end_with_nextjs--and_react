@@ -35,7 +35,7 @@ export const Menu = ({ blogName, logo, menuLink = [] }: MenuProps) => {
       <Styled.Wrapper $menuVisible={menuVisible} aria-hidden={!menuVisible}>
         <Styled.Nav>
           <Styled.Logo>
-            <LogoLink link="/" srcImg={logo.data.attributes.url} text={blogName} />
+            <LogoLink link="/" srcImg={logo?.data?.attributes.url} text={blogName} />
           </Styled.Logo>
 
           {menuLink.map((link) => (

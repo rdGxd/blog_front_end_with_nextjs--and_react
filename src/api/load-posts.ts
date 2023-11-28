@@ -1,6 +1,6 @@
+import { PostCardProps } from "@/components/PostCard";
 import { cfg } from "@/config";
 import { GRAPHQL_QUERY } from "@/graphql/queries";
-import { PostData } from "@/types/post";
 import { Settings } from "@/types/settings";
 import { request } from "graphql-request";
 
@@ -27,7 +27,9 @@ export type LoadPostsVariables = {
 
 export type StrapiPostAndSettings = {
   setting: Settings;
-  posts: PostData;
+  posts: {
+    data: PostCardProps[];
+  };
 };
 
 export const loadPosts = async (variables: LoadPostsVariables = {}) => {

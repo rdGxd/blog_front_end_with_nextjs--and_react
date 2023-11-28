@@ -2,17 +2,23 @@ import { PostCard, PostCardProps } from "../PostCard";
 import * as Styled from "./styles";
 
 export type PostGridProps = {
-  posts?: PostCardProps[];
+  posts?: {
+    data: PostCardProps[];
+  };
 };
 
 export const PostGrid = ({ posts = [] }: PostGridProps) => {
   return (
     <Styled.Wrapper>
-      {posts.length <= 0 && <Styled.NotFound>Nenhum Post</Styled.NotFound>}
+      {!posts.data?.length && <Styled.NotFound>Nenhum Post</Styled.NotFound>}
 
       <Styled.Grid>
-        {posts.length > 0 &&
-          posts.map((post) => <PostCard key={post.attributes.slug} attributes={{ ...post.attributes }} />)}
+        {posts.data?.length > 0 &&
+          posts.data?.map((post) => (
+            <>
+              <PostCard attributes={post.attributes} key={post.attributes.slug} />
+            </>
+          ))}
       </Styled.Grid>
     </Styled.Wrapper>
   );

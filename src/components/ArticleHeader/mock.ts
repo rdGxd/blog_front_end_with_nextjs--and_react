@@ -10,6 +10,6 @@ const mockArticleHeader = {
   cover,
   createdAt,
   excerpt,
-} as ArticleHeaderProps;
+} as unknown as ArticleHeaderProps;
 
 export default mockArticleHeader;

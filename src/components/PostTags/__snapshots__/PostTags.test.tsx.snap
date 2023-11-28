@@ -40,9 +40,9 @@ exports[`<PostTags/> > should match snapshot 1`] = `
     </span>
     <span>
       <a
-        href="/tag/bc3"
+        href="/tag/bc2"
       >
-        BC3
+        BC2
       </a>
     </span>
   </p>

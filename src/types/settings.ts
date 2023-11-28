@@ -1,6 +1,8 @@
 import { HeaderAttributes } from "./header";
 
 export type Settings = {
-  id: string;
-  attributes: HeaderAttributes;
+  data: {
+    id: string;
+    attributes: HeaderAttributes;
+  };
 };

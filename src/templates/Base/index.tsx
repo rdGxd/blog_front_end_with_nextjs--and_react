@@ -1,6 +1,6 @@
-import { GoTop } from "../../components/GoTop";
 import { Settings } from "@/types/settings";
 import { Footer } from "../../components/Footer";
+import { GoTop } from "../../components/GoTop";
 import { Header } from "../../components/Header";
 import { Menu } from "../../components/Menu";
 import * as Styled from "./styles";
@@ -14,9 +14,9 @@ export const Base = ({ settings, children }: BaseProps) => {
   return (
     <Styled.Wrapper>
       <Menu
-        menuLink={settings.attributes.menuLink}
-        blogName={settings.attributes.blogName}
-        logo={settings.attributes.logo}
+        menuLink={settings.data?.attributes.menuLink}
+        blogName={settings.data?.attributes.blogName}
+        logo={settings.data?.attributes.logo}
       />
 
       <Styled.HeaderContainer>
@@ -26,7 +26,7 @@ export const Base = ({ settings, children }: BaseProps) => {
       <Styled.ContentContainer>{children}</Styled.ContentContainer>
 
       <Styled.FooterContainer>
-        <Footer html={settings.attributes.footer[0].children[0].text} />
+        <Footer html={settings.data?.attributes.footer[0].children[0].text} />
       </Styled.FooterContainer>
 
       <GoTop />

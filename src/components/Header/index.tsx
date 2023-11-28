@@ -5,8 +5,10 @@ import * as Styled from "./styles";
 
 export type HeaderProps = {
   data: {
-    id: string;
-    attributes: HeaderAttributes;
+    data: {
+      attributes: HeaderAttributes;
+      id: string;
+    };
   };
   showText?: boolean;
 };
@@ -16,16 +18,16 @@ export const Header = ({ data, showText = true }: HeaderProps) => {
     <Styled.Wrapper>
       <LogoLink
         link="/"
-        srcImg={data.attributes.logo.data.attributes.url}
-        text={`${data.attributes.blogName} - ${data.attributes.blogDescription}`}
+        srcImg={data.data?.attributes.logo.data.attributes.url}
+        text={`${data.data?.attributes.blogName} - ${data.data?.attributes.blogDescription}`}
       />
 
       {showText && (
         <Styled.Content>
           <Heading size="small" as="h2" colorDark={true}>
-            {data.attributes.blogName}
+            {data.data?.attributes.blogName}
           </Heading>
-          <p>{data.attributes.blogDescription}</p>
+          <p>{data.data?.attributes.blogDescription}</p>
         </Styled.Content>
       )}
     </Styled.Wrapper>

@@ -223,33 +223,6 @@ exports[`<PostGrid /> > should match snapshot 1`] = `
         class="c2"
       >
         <a
-          href="/post/1-papapa"
-        >
-          <img
-            alt="1PAPAPA"
-            class="c3"
-            src="https://res.cloudinary.com/dccldzodg/image/upload/v1700489672/baixados_58294ddddf.jpg"
-          />
-        </a>
-        <h2
-          class="c4 c5"
-        >
-          <a
-            href="/post/1-papapa"
-          >
-            1PAPAPA
-          </a>
-        </h2>
-        <p
-          class=""
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta augue quis ligula vehicula elementum.
-        </p>
-      </div>
-      <div
-        class="c2"
-      >
-        <a
           href="/post/3-papapa"
         >
           <img
@@ -325,6 +298,60 @@ exports[`<PostGrid /> > should match snapshot 1`] = `
           class=""
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
+          href="/post/11-papapa"
+        >
+          <img
+            alt="11PAPAPA"
+            class="c3"
+            src="https://res.cloudinary.com/dccldzodg/image/upload/v1700490198/baixados_1_a01f56f752.jpg"
+          />
+        </a>
+        <h2
+          class="c4 c5"
+        >
+          <a
+            href="/post/11-papapa"
+          >
+            11PAPAPA
+          </a>
+        </h2>
+        <p
+          class=""
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare mollis dui congue venenatis. 
+        </p>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
+          href="/post/1-papapa"
+        >
+          <img
+            alt="1PAPAPA"
+            class="c3"
+            src="https://res.cloudinary.com/dccldzodg/image/upload/v1700489672/baixados_58294ddddf.jpg"
+          />
+        </a>
+        <h2
+          class="c4 c5"
+        >
+          <a
+            href="/post/1-papapa"
+          >
+            1PAPAPA
+          </a>
+        </h2>
+        <p
+          class=""
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta augue quis ligula vehicula elementum.
         </p>
       </div>
     </div>

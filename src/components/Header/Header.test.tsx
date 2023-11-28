@@ -11,10 +11,10 @@ describe("<Header />", () => {
 
     expect(screen.getByRole("img", { name: /Rodrigo Silva/i })).toHaveAttribute(
       "src",
-      mockHeader.data.attributes.logo.data.attributes.url,
+      mockHeader.data.data.attributes.logo.data.attributes.url,
     );
 
-    expect(screen.getByText(mockHeader.data.attributes.blogDescription)).toBeInTheDocument();
+    expect(screen.getByText(mockHeader.data.data.attributes.blogDescription)).toBeInTheDocument();
   });
 
   it("should render image only", () => {
@@ -24,10 +24,10 @@ describe("<Header />", () => {
 
     expect(screen.getByRole("img", { name: /Rodrigo Silva/i })).toHaveAttribute(
       "src",
-      mockHeader.data.attributes.logo.data.attributes.url,
+      mockHeader.data.data.attributes.logo.data.attributes.url,
     );
 
-    expect(screen.queryByRole(mockHeader.data.attributes.blogDescription)).not.toBeInTheDocument();
+    expect(screen.queryByRole(mockHeader.data.data.attributes.blogDescription)).not.toBeInTheDocument();
   });
 
   it("should match snapshot", () => {

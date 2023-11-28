@@ -203,6 +203,20 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
   filter: brightness(80%);
 }
 
+.c26 {
+  text-align: center;
+  border-top: 0.1rem solid #DDDDDD;
+}
+
+.c26 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.c26 .c21 {
+  font-size: 1.6rem;
+}
+
 .c1 {
   display: inline-block;
   vertical-align: middle;
@@ -222,20 +236,6 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
   right: 2rem;
   z-index: 6;
   opacity: 0.7;
-}
-
-.c26 {
-  text-align: center;
-  border-top: 0.1rem solid #DDDDDD;
-}
-
-.c26 a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.c26 .c21 {
-  font-size: 1.6rem;
 }
 
 .c7 {
@@ -461,13 +461,6 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
         >
           #TESTE
         </a>
-        <a
-          class="c8"
-          href="TESTE2"
-          target="_self"
-        >
-          #TESTE2
-        </a>
       </nav>
     </div>
     <header
@@ -563,25 +556,24 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
           <div
             class="c21 c22"
           >
-            <p>
-              Nostro 
-              <strong>
-                definitiones
-              </strong>
-               (Tech) sed cu - João. Sea Object Destructuring, useState dicat fabulas 
-              <a
-                href="\\\\\\"https://gist.github.com/luizomf/e7cf0c3d172801225cce694681ecb0ad\\\\\\""
-              >
-                consetetur
-              </a>
-               no, odio deseruisse assueverit mei eu, vis probo nonumes molestie id. Ipsum movet liberavisse an mea, diceret vituperata ne his, delenit apeirian quo ea. Imperdiet percipitur te eos. Per ludus aliquam cu. 
-              <a
-                href="\\\\\\"https://gist.github.com/luizomf/e7cf0c3d172801225cce694681ecb0ad\\\\\\""
-              >
-                Eos ex tincidunt necessitatibus, timeam theophrastus mel cu
-              </a>
-              .
-            </p>
+            Nostro 
+            <strong>
+              definitiones
+            </strong>
+             (Tech) sed cu - João. Sea Object Destructuring, useState dicat fabulas 
+            <a
+              href="\\\\\\"https://gist.github.com/luizomf/e7cf0c3d172801225cce694681ecb0ad\\\\\\""
+            >
+              consetetur
+            </a>
+             no, odio deseruisse assueverit mei eu, vis probo nonumes molestie id. Ipsum movet liberavisse an mea, diceret vituperata ne his, delenit apeirian quo ea. Imperdiet percipitur te eos. Per ludus aliquam cu. 
+            <a
+              href="\\\\\\"https://gist.github.com/luizomf/e7cf0c3d172801225cce694681ecb0ad\\\\\\""
+            >
+              Eos ex tincidunt necessitatibus, timeam theophrastus mel cu
+            </a>
+            .
+            <p />
             <pre>
               <code
                 class="\\\\\\"language-plaintext\\\\\\""
@@ -953,9 +945,9 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
           </span>
           <span>
             <a
-              href="/tag/bc3"
+              href="/tag/bc2"
             >
-              BC3
+              BC2
             </a>
           </span>
         </p>

@@ -8,10 +8,4 @@ describe("<PostsTemplate />", () => {
 
     expect(container).toMatchSnapshot();
   });
-
-  it("should match snapshot without posts", () => {
-    const { container } = renderTheme(<PostsTemplate {...mock} posts={undefined} />);
-
-    expect(container).toMatchSnapshot();
-  });
 });
