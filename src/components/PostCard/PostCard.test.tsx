@@ -7,15 +7,15 @@ describe("<PostCard />", () => {
   it("should render a heading, cover and excerpt", () => {
     renderTheme(<PostCard {...mockPostCard} />);
 
-    expect(screen.getByRole("heading", { name: mockPostCard.attributes.title })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: mockPostCard.title })).toBeInTheDocument();
 
-    expect(screen.getByRole("img", { name: mockPostCard.attributes.title })).toBeInTheDocument();
+    expect(screen.getByRole("img", { name: mockPostCard.title })).toBeInTheDocument();
 
-    expect(screen.getByText(mockPostCard.attributes.excerpt)).toBeInTheDocument();
+    expect(screen.getByText(mockPostCard.excerpt)).toBeInTheDocument();
 
-    expect(screen.getAllByRole("link", { name: mockPostCard.attributes.title })[0]).toHaveAttribute(
+    expect(screen.getAllByRole("link", { name: mockPostCard.title })[0]).toHaveAttribute(
       "href",
-      `/post/${mockPostCard.attributes.slug}`,
+      `/post/${mockPostCard.slug}`,
     );
   });
 

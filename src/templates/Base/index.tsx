@@ -1,4 +1,4 @@
-import { Settings } from "@/types/settings";
+import { StrapiSetting } from "@/types/StrapiSettings";
 import { Footer } from "../../components/Footer";
 import { GoTop } from "../../components/GoTop";
 import { Header } from "../../components/Header";
@@ -6,7 +6,7 @@ import { Menu } from "../../components/Menu";
 import * as Styled from "./styles";
 
 export type BaseProps = {
-  settings: Settings;
+  settings: StrapiSetting;
   children: React.ReactNode;
 };
 

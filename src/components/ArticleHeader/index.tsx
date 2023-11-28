@@ -1,13 +1,9 @@
-import { Cover } from "@/types/cover";
-import { ArticleMeta, ArticleMetaProps } from "../ArticleMeta";
+import { StrapiPost } from "@/types/StrapiPost";
+import { ArticleMeta } from "../ArticleMeta";
 import { Heading } from "../Heading";
 import * as Styled from "./styles";
 
-export type ArticleHeaderProps = {
-  title: string;
-  excerpt: string;
-  cover: Cover;
-} & ArticleMetaProps;
+export type ArticleHeaderProps = StrapiPost["attributes"];
 
 export const ArticleHeader = ({ title, excerpt, cover, author, categories, createdAt }: ArticleHeaderProps) => {
   return (

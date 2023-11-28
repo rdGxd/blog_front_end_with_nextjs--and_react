@@ -1,23 +1,13 @@
 import { HeaderProps } from ".";
+import { data } from "../../api/dados.json";
+
+const { blogDescription, blogName, logo } = data.setting.data.attributes;
 
 export const mockHeader = {
   data: {
-    data: {
-      id: "1",
-      attributes: {
-        blogName: "Rodrigo Silva",
-        blogDescription:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut arcu nibh, commodo sed quam ac, laoreet consequat diam. In commodo ut erat sit amet lobortis. Etiam sit amet maximus est.",
-        logo: {
-          data: {
-            attributes: {
-              alternativeText: null,
-              url: "assets/images/kurapika.jpeg",
-            },
-          },
-        },
-      },
-    },
+    blogDescription,
+    blogName,
+    logo,
   },
   showText: true,
 } as HeaderProps;

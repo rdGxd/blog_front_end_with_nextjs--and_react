@@ -95,22 +95,6 @@ exports[`<ArticleHeader /> > should render heading, excerpt, cover img and meta 
         >
           20 de nov. de 2023
         </time>
-        <span
-          class="separator"
-        >
-           | 
-        </span>
-        <span
-          class="categories"
-        >
-          <span>
-            <a
-              href="/category/python"
-            >
-              Python
-            </a>
-          </span>
-        </span>
       </p>
     </div>
   </header>

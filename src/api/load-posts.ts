@@ -1,7 +1,7 @@
-import { PostCardProps } from "@/components/PostCard";
 import { cfg } from "@/config";
 import { GRAPHQL_QUERY } from "@/graphql/queries";
-import { Settings } from "@/types/settings";
+import { StrapiPost } from "@/types/StrapiPost";
+import { StrapiSetting } from "@/types/StrapiSettings";
 import { request } from "graphql-request";
 
 export type LoadPostsVariables = {
@@ -26,15 +26,16 @@ export type LoadPostsVariables = {
 };
 
 export type StrapiPostAndSettings = {
-  setting: Settings;
+  setting: StrapiSetting;
   posts: {
-    data: PostCardProps[];
+    data: StrapiPost[];
   };
 };
 
 export const loadPosts = async (variables: LoadPostsVariables = {}) => {
   const defaultVariables: LoadPostsVariables = {
     sort: ["AAAA-MM-DD"],
+    // pagination: { start: 0, limit: 10 },
     start: 0,
     limit: 10,
   };

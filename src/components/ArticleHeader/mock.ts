@@ -6,10 +6,10 @@ const { title, excerpt, cover, author, categories, createdAt } = data.posts.data
 const mockArticleHeader = {
   title,
   author,
-  categories: categories.data,
+  categories,
   cover,
   createdAt,
   excerpt,
-} as unknown as ArticleHeaderProps;
+} as ArticleHeaderProps;
 
 export default mockArticleHeader;

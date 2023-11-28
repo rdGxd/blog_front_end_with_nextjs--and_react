@@ -1,18 +1,11 @@
-import { Cover } from "@/types/cover";
+import { StrapiPost } from "@/types/StrapiPost";
 import Link from "next/link";
 import { Heading } from "../Heading";
 import * as Styled from "./styles";
 
-export type PostCardProps = {
-  attributes: {
-    title: string;
-    excerpt: string;
-    cover: Cover;
-    slug: string;
-  };
-};
+export type PostCardProps = StrapiPost["attributes"];
 
-export const PostCard = ({ attributes: { cover, excerpt, slug, title } }: PostCardProps) => {
+export const PostCard = ({ cover, excerpt, slug, title }: PostCardProps) => {
   return (
     <Styled.Wrapper>
       <Link href={`/post/${slug}`}>

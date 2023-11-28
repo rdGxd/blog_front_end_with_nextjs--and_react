@@ -1,13 +1,11 @@
-import { PostCardProps } from "@/components/PostCard";
-import { Settings } from "@/types/settings";
+import { StrapiPost } from "@/types/StrapiPost";
+import { StrapiSetting } from "@/types/StrapiSettings";
 import { PostGrid } from "../../components/PostGrid";
 import { Base } from "../Base";
 
 export type PostsTemplateProps = {
-  settings: Settings;
-  posts?: {
-    data: PostCardProps[];
-  };
+  settings: StrapiSetting;
+  posts?: StrapiPost[];
 };
 
 export const PostsTemplate = ({ settings, posts }: PostsTemplateProps) => {

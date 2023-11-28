@@ -1,14 +1,9 @@
-import { Category } from "@/types/category";
+import { StrapiPost } from "@/types/StrapiPost";
 import Link from "next/link";
-import { Author } from "../../types/author";
 import { formatDate } from "../../utils/format-date";
 import * as Styled from "./styles";
 
-export type ArticleMetaProps = {
-  createdAt: string;
-  author?: Author;
-  categories?: Category[];
-};
+export type ArticleMetaProps = StrapiPost["attributes"];
 
 export const ArticleMeta = ({ createdAt, author = undefined, categories = [] }: ArticleMetaProps) => {
   return (

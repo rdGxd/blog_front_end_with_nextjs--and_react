@@ -4,7 +4,6 @@ import { GetStaticProps } from "next";
 import Head from "next/head";
 
 export default function Index({ posts, setting }: StrapiPostAndSettings) {
-  console.log(posts);
   return (
     <>
       <Head>
@@ -13,7 +12,7 @@ export default function Index({ posts, setting }: StrapiPostAndSettings) {
         </title>
         <meta name="description" content={setting.data.attributes.blogDescription} />
       </Head>
-      <PostsTemplate posts={posts} settings={setting} />
+      <PostsTemplate posts={posts.data} settings={setting} />
     </>
   );
 }
