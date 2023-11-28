@@ -1,9 +1,9 @@
 # Write your query or mutation here
+# Write your query or mutation here
 fragment image on UploadFile {
   alternativeText
   url
 }
-
 fragment cover on Post {
   cover {
     data {
@@ -14,22 +14,18 @@ fragment cover on Post {
     }
   }
 }
-
 fragment tag on Tag {
   displayName
   slug
 }
-
 fragment author on Author {
   displayName
   slug
 }
-
 fragment category on Category {
   displayName
   slug
 }
-
 fragment tags on Post {
   tags {
     data {
@@ -40,7 +36,6 @@ fragment tags on Post {
     }
   }
 }
-
 fragment authorPost on Post {
   author {
     data {
@@ -51,7 +46,6 @@ fragment authorPost on Post {
     }
   }
 }
-
 fragment categories on Post {
   categories {
     data {
@@ -62,31 +56,30 @@ fragment categories on Post {
     }
   }
 }
-
 fragment menuLink on ComponentMenuMenuLink {
   id
   link
   text
   newTab
 }
-
 fragment post on Post {
   slug
   title
   excerpt
   content
+  createdAt
   allowComments
   ...cover
   ...categories
   ...tags
   ...authorPost
 }
-
 fragment settings on Setting {
   blogName
   blogDescription
   logo {
     data {
+      id
       attributes {
         ...image
       }
@@ -95,6 +88,7 @@ fragment settings on Setting {
   menuLink {
     ...menuLink
   }
+  footer
 }
 
 query GET_POSTS {
@@ -120,7 +114,6 @@ query GET_POST_BY_SLUG($postSlug: StringFilterInput) {
   setting {
     data {
       id
-
       attributes {
         ...settings
       }
@@ -128,6 +121,7 @@ query GET_POST_BY_SLUG($postSlug: StringFilterInput) {
   }
   posts(filters: { slug: $postSlug }) {
     data {
+      id
       attributes {
         ...post
       }
@@ -139,7 +133,6 @@ query GET_POSTS_BY_AUTHOR($authorSlug: StringFilterInput) {
   setting {
     data {
       id
-
       attributes {
         ...settings
       }
@@ -148,6 +141,7 @@ query GET_POSTS_BY_AUTHOR($authorSlug: StringFilterInput) {
 
   posts(filters: { author: { slug: $authorSlug } }) {
     data {
+      id
       attributes {
         ...authorPost
       }
@@ -159,7 +153,6 @@ query GET_POSTS_BY_CATEGORY($categorySlug: StringFilterInput) {
   setting {
     data {
       id
-
       attributes {
         ...settings
       }
@@ -168,6 +161,7 @@ query GET_POSTS_BY_CATEGORY($categorySlug: StringFilterInput) {
 
   posts(filters: { categories: { slug: $categorySlug } }) {
     data {
+      id
       attributes {
         ...post
       }
@@ -188,6 +182,7 @@ query GET_POSTS_BY_TAGS($tagSlug: StringFilterInput!) {
 
   posts(filters: { tags: { slug: $tagSlug } }) {
     data {
+      id
       attributes {
         ...post
       }
