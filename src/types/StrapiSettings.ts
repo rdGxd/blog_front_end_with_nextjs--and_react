@@ -2,8 +2,10 @@ import { FooterType } from "./footer";
 import { MenuPropsLinks } from "./menu-props-links";
 
 export type StrapiSetting = {
-  id?: number;
-  attributes?: StrapiSettingAttributes;
+  data: {
+    id?: number;
+    attributes?: StrapiSettingAttributes;
+  };
 };
 
 export type StrapiSettingAttributes = {

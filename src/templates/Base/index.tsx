@@ -16,11 +16,11 @@ export const Base = ({ settings, children }: BaseProps) => {
       <Menu
         menuLink={settings.data?.attributes.menuLink}
         blogName={settings.data?.attributes.blogName}
-        logo={settings.data?.attributes.logo}
+        logo={settings.data.attributes.logo}
       />
 
       <Styled.HeaderContainer>
-        <Header data={settings} />
+        <Header data={settings.data.attributes} />
       </Styled.HeaderContainer>
 
       <Styled.ContentContainer>{children}</Styled.ContentContainer>
