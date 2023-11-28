@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<Base /> > should match snapshot 1`] = `
+exports[`<PostsTemplate /> > should match snapshot 1`] = `
 .c6 {
   color: #000000;
   line-height: 1.2;
@@ -747,7 +747,7 @@ exports[`<Base /> > should match snapshot 1`] = `
 </div>
 `;
 
-exports[`<Base /> > should match snapshot without posts 1`] = `
+exports[`<PostsTemplate /> > should match snapshot without posts 1`] = `
 .c6 {
   color: #000000;
   line-height: 1.2;
