@@ -1,21 +1,21 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`<PostTemplate /> > should match snapshot 1`] = `
-.c18 {
+.c19 {
   font-size: 1.6rem;
   color: #AAAAAA;
   font-style: italic;
 }
 
-.c18 .categories span::after {
+.c19 .categories span::after {
   content: ", ";
 }
 
-.c18 .categories span:last-child::after {
+.c19 .categories span:last-child::after {
   content: "";
 }
 
-.c18 a:hover {
+.c19 a:hover {
   filter: brightness(50%);
 }
 
@@ -26,62 +26,62 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
   text-transform: uppercase;
 }
 
-.c11 {
+.c12 {
   color: #000000;
   line-height: 1.2;
   font-size: 2.4rem;
   text-transform: none;
 }
 
-.c15 {
+.c16 {
   color: #000000;
   line-height: 1.2;
   font-size: 6.4rem;
   text-transform: none;
 }
 
-.c14 {
+.c15 {
   padding-bottom: 4.0rem;
   margin-bottom: 4.0rem;
   border-bottom: 0.1rem solid #DDDDDD;
 }
 
-.c14 .c5 {
+.c15 .c5 {
   margin: 0;
   margin-bottom: 2.4rem;
 }
 
-.c16 {
+.c17 {
   margin: 2.4rem 0;
   font-size: 2.4rem;
 }
 
-.c17 {
+.c18 {
   max-width: 100%;
   display: block;
   margin-bottom: 2.4rem;
 }
 
-.c21 {
+.c22 {
   font-size: 2.4rem;
 }
 
-.c21 p {
+.c22 p {
   margin: 2.4rem 0;
 }
 
-.c21 a:visited,
-.c21 a:link {
+.c22 a:visited,
+.c22 a:link {
   color: #dc143c;
   text-decoration: none;
   transition: all 300ms ease-in-out;
 }
 
-.c21 a:hover {
+.c22 a:hover {
   filter: brightness(80%);
 }
 
-.c21 code {
+.c22 code {
   font-family: monospace;
   color: #dc143c;
   font-size: 1.6rem;
@@ -90,7 +90,7 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
   margin: 0.2rem;
 }
 
-.c21 pre {
+.c22 pre {
   background: #000000;
   padding: 2.4rem;
   font-family: monospace;
@@ -101,62 +101,62 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
   font-size: 1.6rem;
 }
 
-.c21 pre code {
+.c22 pre code {
   color: inherit;
   background: inherit;
 }
 
-.c21 img {
+.c22 img {
   max-width: 100%;
 }
 
-.c21 .image {
+.c22 .image {
   background: #DDDDDD;
   line-height: 0;
   margin: 2.4rem 0;
 }
 
-.c21 .image figcaption {
+.c22 .image figcaption {
   text-align: center;
   font-size: 1.6rem;
   padding: 1.6rem;
   line-height: 1.3;
 }
 
-.c21 .image-style-side {
+.c22 .image-style-side {
   max-width: 50%;
   float: right;
   margin: 2.4rem 0;
 }
 
-.c21 hr {
+.c22 hr {
   border: none;
   border-bottom: 0.1rem solid #DDDDDD;
 }
 
-.c21 ul,
-.c21 ol {
+.c22 ul,
+.c22 ol {
   margin: 2.4rem 4.0rem;
 }
 
-.c21 .table {
+.c22 .table {
   width: 100%;
   border-collapse: collapse;
   margin: 2.4rem 0;
 }
 
-.c21 table {
+.c22 table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.c21 table td,
-.c21 table th {
+.c22 table td,
+.c22 table th {
   padding: 1.6rem;
   border: 0.1rem solid #DDDDDD;
 }
 
-.c21 blockquote {
+.c22 blockquote {
   border-left: 0.5rem solid #dc143c;
   color: #AAAAAA;
   filter: brightness(80%);
@@ -165,41 +165,41 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
   margin: 2.4rem;
 }
 
-.c13 {
+.c14 {
   width: 100%;
   margin: 0 auto;
   padding: 0 3.2rem;
   max-width: 96rem;
 }
 
-.c19 {
+.c20 {
   width: 100%;
   margin: 0 auto;
   padding: 0 3.2rem;
   max-width: 80rem;
 }
 
-.c23 {
+.c24 {
   margin: 2.4rem 0;
 }
 
-.c23 span {
+.c24 span {
   margin: 0 0rem 0 0.5rem;
 }
 
-.c23 span::before {
+.c24 span::before {
   content: " ";
 }
 
-.c23 span::after {
+.c24 span::after {
   content: ", ";
 }
 
-.c23 span:last-child::after {
+.c24 span:last-child::after {
   content: "";
 }
 
-.c23 a:hover {
+.c24 a:hover {
   filter: brightness(80%);
 }
 
@@ -209,7 +209,7 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
   overflow: hidden;
 }
 
-.c26 {
+.c27 {
   position: fixed;
   background: #000000;
   color: #FFFFFF;
@@ -224,17 +224,17 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
   opacity: 0.7;
 }
 
-.c25 {
+.c26 {
   text-align: center;
   border-top: 0.1rem solid #DDDDDD;
 }
 
-.c25 a {
+.c26 a {
   color: inherit;
   text-decoration: none;
 }
 
-.c25 .c20 {
+.c26 .c21 {
   font-size: 1.6rem;
 }
 
@@ -251,7 +251,7 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
   border-radius: 50%;
 }
 
-.c9 {
+.c10 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -263,11 +263,11 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
   margin: 0 auto;
 }
 
-.c9 .c5 {
+.c10 .c5 {
   margin: 0 0 calc(1.6rem -1rem);
 }
 
-.c10 {
+.c11 {
   display: flex;
   flex-flow: column wrap;
   margin-left: 3.2rem;
@@ -335,39 +335,61 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
   color: #FFFFFF;
 }
 
-.c12 {
+.c9 {
+  margin-top: 6.4rem;
+  padding: 0 3.2rem;
+}
+
+.c13 {
   max-width: 120rem;
   width: 100%;
   margin: 0 auto;
   margin-bottom: 6.4rem;
 }
 
-.c24 {
+.c25 {
   max-width: 120rem;
   width: 100%;
   margin: 0 auto;
   padding: 3.2rem;
 }
 
-.c22 {
+.c23 {
   padding: 0 3.2rem;
 }
 
 @media (max-width: 768px) {
-  .c15 {
+  .c16 {
     font-size: 4.0rem;
   }
 }
 
 @media (max-width: 768px) {
-  .c21 {
+  .c22 {
     font-size: 2rem;
   }
 
-  .c21 .image-style-side {
+  .c22 .image-style-side {
     max-width: 100%;
     float: none;
     margin: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .c10 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .c10>.c5 {
+    margin: 0 0 2.4rem 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .c11 {
+    margin-left: 0;
   }
 }
 
@@ -449,10 +471,10 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
       </nav>
     </div>
     <header
-      class=""
+      class="c9"
     >
       <header
-        class="c9"
+        class="c10"
       >
         <h1
           class="c5 c6"
@@ -469,10 +491,10 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
           </a>
         </h1>
         <div
-          class="c10"
+          class="c11"
         >
           <h2
-            class="c5 c11"
+            class="c5 c12"
           >
             Rodrigo Silva
           </h2>
@@ -483,34 +505,34 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
       </header>
     </header>
     <div
-      class="c12"
+      class="c13"
     >
       <article
         class=""
       >
         <div
-          class="c13"
+          class="c14"
         >
           <header
-            class="c14"
+            class="c15"
           >
             <h1
-              class="c5 c15"
+              class="c5 c16"
             >
               6PAPAPA
             </h1>
             <p
-              class="c16"
+              class="c17"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <img
               alt="6PAPAPA"
-              class="c17"
+              class="c18"
               src="https://res.cloudinary.com/dccldzodg/image/upload/v1700490199/360_F_571067620_JS_5_T5_Tk_Dtu3gf8_Wqm78_Ko_JRF_1vob_Pvo6_1dff1a52c6.jpg"
             />
             <div
-              class="c18"
+              class="c19"
             >
               <p>
                 <span>
@@ -536,10 +558,10 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
           </header>
         </div>
         <div
-          class="c19"
+          class="c20"
         >
           <div
-            class="c20 c21"
+            class="c21 c22"
           >
             <p>
               Nostro 
@@ -915,10 +937,10 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
         </div>
       </article>
       <div
-        class="c22"
+        class="c23"
       >
         <p
-          class="c23"
+          class="c24"
         >
           tags:
            
@@ -940,13 +962,13 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
       </div>
     </div>
     <footer
-      class="c24"
+      class="c25"
     >
       <footer
-        class="c25"
+        class="c26"
       >
         <div
-          class="c20 c21"
+          class="c21 c22"
         >
           texto do footer
         </div>
@@ -954,7 +976,7 @@ exports[`<PostTemplate /> > should match snapshot 1`] = `
     </footer>
     <a
       aria-label="Go to top"
-      class="c26"
+      class="c27"
       href="#"
       title="Go to top"
     >

@@ -4,7 +4,8 @@ export const Wrapper = styled.div``;
 
 export const HeaderContainer = styled.header`
   ${({ theme }) => css`
-    ${theme.spacings.xhuge}
+    margin-top: ${theme.spacings.xhuge};
+    padding: 0 ${theme.spacings.large};
   `}
 `;
 
