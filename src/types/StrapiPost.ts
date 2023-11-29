@@ -5,11 +5,15 @@ import { Cover } from "./cover";
 import { PostTag } from "./tags";
 
 export type StrapiPost = {
-  id?: number;
+  data: {
+    id?: number;
+    attributes?: StrapiPostAttributes;
+  };
   attributes?: StrapiPostAttributes;
 };
 
-type StrapiPostAttributes = {
+export type StrapiPostAttributes = {
+  blogName?: string;
   title?: string;
   slug?: string;
   excerpt?: string;
@@ -18,7 +22,9 @@ type StrapiPostAttributes = {
   createdAt?: string;
   updateAt?: string;
   cover?: Cover;
-  tags?: PostTag[];
+  tags?: {
+    data: PostTag[];
+  };
   categories?: CategoryType[];
   author?: Author;
 };

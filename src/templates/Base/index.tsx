@@ -14,8 +14,8 @@ export const Base = ({ settings, children }: BaseProps) => {
   return (
     <Styled.Wrapper>
       <Menu
-        menuLink={settings.data?.attributes.menuLink}
-        blogName={settings.data?.attributes.blogName}
+        menuLink={settings.data.attributes.menuLink}
+        blogName={settings.data.attributes.blogName}
         logo={settings.data.attributes.logo}
       />
 

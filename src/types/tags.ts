@@ -1,5 +1,5 @@
 export type PostTag = {
-  id: string;
+  id: number;
   attributes: TagAttributes;
 };
 

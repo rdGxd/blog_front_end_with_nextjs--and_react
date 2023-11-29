@@ -1,6 +1,6 @@
-import { StrapiPost } from "@/types/StrapiPost";
+import { PostGridProps } from ".";
 import { data } from "../../api/dados.json";
 
 export default {
-  posts: data.posts.data,
-} as StrapiPost;
+  posts: [data.posts.data],
+} as PostGridProps;

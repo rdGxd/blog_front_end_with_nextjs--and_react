@@ -1,14 +1,13 @@
-import { Content } from "@/types/content";
-import { ArticleHeader, ArticleHeaderProps } from "../ArticleHeader";
+import { ArticleHeader } from "../ArticleHeader";
 import { HtmlContent } from "../HtmlContent";
 import { PostContainer } from "../PostContainer";
 import * as Styled from "./styles";
+import { StrapiPostAttributes } from "@/types/StrapiPost";
 
-export type PostProps = ArticleHeaderProps & {
-  content: Content[];
-};
+export type PostProps = StrapiPostAttributes;
 
 export const Post = ({ title, author, categories, content, cover, createdAt, excerpt }: PostProps) => {
+  console.log(cover);
   return (
     <Styled.Wrapper>
       <PostContainer size="max">

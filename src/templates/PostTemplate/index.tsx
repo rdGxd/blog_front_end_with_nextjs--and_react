@@ -1,27 +1,23 @@
-import { Settings } from "@/types/settings";
-import { PostTag } from "@/types/tags";
-import { Post, PostProps } from "../../components/Post";
-import { PostTags } from "../../components/PostTags";
+import { StrapiPostAttributes } from "@/types/StrapiPost";
+import { StrapiSetting } from "@/types/StrapiSettings";
+import { Post } from "../../components/Post";
 import { Base } from "../Base";
 import * as Styled from "./styles";
-
-type PostTemplateAttributes = PostProps & {
-  tags: {
-    data: PostTag[];
-  };
-};
+import { PostTags } from "@/components/PostTags";
 
 export type PostTemplateProps = {
-  settings: Settings;
-  post: PostTemplateAttributes;
+  settings: StrapiSetting;
+  post?: {
+    attributes?: StrapiPostAttributes;
+  };
 };
 
 export const PostTemplate = ({ settings, post }: PostTemplateProps) => {
   return (
     <Base settings={settings}>
-      <Post {...post} />
+      <Post {...post.attributes} />
       <Styled.TagsContainer>
-        <PostTags tags={post.tags.data} />
+        <PostTags tags={post.attributes.tags} />
       </Styled.TagsContainer>
     </Base>
   );
