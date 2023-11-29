@@ -20,7 +20,7 @@ export const Base = ({ settings, children }: BaseProps) => {
       />
 
       <Styled.HeaderContainer>
-        <Header data={settings.data.attributes} />
+        <Header data={settings.data?.attributes} />
       </Styled.HeaderContainer>
 
       <Styled.ContentContainer>{children}</Styled.ContentContainer>

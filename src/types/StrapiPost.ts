@@ -1,5 +1,5 @@
 import { Author } from "./author";
-import { CategoryType } from "./category";
+import { CategoryData } from "./category";
 import { Content } from "./content";
 import { Cover } from "./cover";
 import { PostTag } from "./tags";
@@ -13,7 +13,7 @@ export type StrapiPost = {
 };
 
 export type StrapiPostAttributes = {
-  blogName?: string;
+  blogName: string;
   title?: string;
   slug?: string;
   excerpt?: string;
@@ -25,6 +25,6 @@ export type StrapiPostAttributes = {
   tags?: {
     data: PostTag[];
   };
-  categories?: CategoryType[];
+  categories?: CategoryData;
   author?: Author;
 };

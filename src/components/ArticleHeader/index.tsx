@@ -11,8 +11,8 @@ export const ArticleHeader = ({ title, excerpt, cover, author, categories, creat
       <Heading size="huge">{title}</Heading>
       <Styled.Excerpt>{excerpt}</Styled.Excerpt>
 
-      <Styled.Cover src={cover?.data.attributes.url} alt={title} />
-      <ArticleMeta author={author} categories={categories} createdAt={createdAt} />
+      <Styled.Cover src={cover.data.attributes.url} alt={title} />
+      <ArticleMeta author={author} categories={categories} createdAt={createdAt} blogName={""} />
     </Styled.Wrapper>
   );
 };

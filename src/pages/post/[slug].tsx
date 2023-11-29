@@ -15,9 +15,9 @@ export default function PostPage({ posts, setting }: StrapiPostAndSettings) {
     <>
       <Head>
         <title>
-          {post.attributes.title} - {post.attributes.blogName}
-          <meta name="description" content={post.attributes.excerpt} />
+          {post.attributes.title} - {setting.data.attributes.blogName}
         </title>
+        <meta name="description" content={post.attributes.excerpt} />
       </Head>
       <PostTemplate post={posts.data[0]} settings={setting} />
     </>

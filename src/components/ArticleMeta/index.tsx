@@ -19,11 +19,11 @@ export const ArticleMeta = ({ createdAt, author = undefined, categories = [] }: 
 
         <time dateTime={createdAt}>{formatDate(createdAt)}</time>
 
-        {categories.length > 0 && (
+        {categories.data.length > 0 && (
           <>
             <span className="separator"> | </span>
             <span className="categories">
-              {categories.map((category) => {
+              {categories.data.map((category) => {
                 return (
                   <span key={`article-meta-cat-${category.attributes.slug}`}>
                     <Link href={`/category/${category.attributes.slug}`}>{category.attributes.displayName}</Link>

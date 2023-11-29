@@ -5,10 +5,10 @@ import mock from "./mock";
 
 describe("<Base />", () => {
   it("should render base elements", () => {
-    renderTheme(<Base {...mock} />);
+    const { debug } = renderTheme(<Base {...mock} />);
 
     expect(screen.getByRole("img", { name: "Rodrigo Silva - Blog do Rodrigo" })).toBeInTheDocument();
-
+    debug();
     expect(screen.getByLabelText("Open or close menu")).toBeInTheDocument();
 
     expect(screen.getByText("texto do footer")).toBeInTheDocument();
