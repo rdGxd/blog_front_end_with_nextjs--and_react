@@ -1,5 +1,5 @@
-import { PostsTemplate } from ".";
 import { renderTheme } from "../../styles/render-theme";
+import { PostsTemplate } from "./PostsTemplate.1";
 import mock from "./mock";
 
 describe("<PostsTemplate />", () => {

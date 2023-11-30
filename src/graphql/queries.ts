@@ -10,6 +10,9 @@ export const GRAPHQL_QUERY = gql`
     $postSearch: StringFilterInput
     $authorSlug: StringFilterInput
     $tagSlug: StringFilterInput
+    $sort: [String] = ["createdAt:desc"]
+    $start: Int = 0
+    $limit: Int = 3
   ) {
     setting {
       data {
@@ -21,6 +24,7 @@ export const GRAPHQL_QUERY = gql`
     }
 
     posts(
+      sort: $sort
       filters: {
         slug: $postSlug
         title: $postSearch
@@ -28,6 +32,7 @@ export const GRAPHQL_QUERY = gql`
         author: { slug: $authorSlug }
         tags: { slug: $tagSlug }
       }
+      pagination: { start: $start, limit: $limit }
     ) {
       data {
         attributes {

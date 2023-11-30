@@ -1,9 +1,9 @@
-import { StrapiPostAndSettings, loadPosts } from "@/api/load-posts";
+import { StrapiPostAndSettings, defaultLoadPostsVariables, loadPosts } from "@/api/load-posts";
 import { PostsTemplate } from "@/templates/PostsTemplate";
 import { GetStaticProps } from "next";
 import Head from "next/head";
 
-export default function Index({ posts, setting }: StrapiPostAndSettings) {
+export default function Index({ posts, setting, variables }: StrapiPostAndSettings) {
   return (
     <>
       <Head>
@@ -12,7 +12,7 @@ export default function Index({ posts, setting }: StrapiPostAndSettings) {
         </title>
         <meta name="description" content={setting.data.attributes.blogDescription} />
       </Head>
-      <PostsTemplate posts={posts.data} settings={setting} />
+      <PostsTemplate posts={posts.data} settings={setting} variables={variables} />
     </>
   );
 }
@@ -36,6 +36,9 @@ export const getStaticProps: GetStaticProps<StrapiPostAndSettings> = async () =>
     props: {
       posts: data.posts,
       setting: data.setting,
+      variables: {
+        ...defaultLoadPostsVariables,
+      },
     },
     revalidate: 20 * 60 * 60,
   };

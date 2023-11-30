@@ -30,17 +30,17 @@ export type StrapiPostAndSettings = {
   posts?: {
     data: StrapiPost[];
   };
+  variables?: LoadPostsVariables;
+};
+export const defaultLoadPostsVariables: LoadPostsVariables = {
+  sort: ["createdAt:desc"],
+  start: 0,
+  limit: 3,
 };
 
 export const loadPosts = async (variables: LoadPostsVariables = {}) => {
-  const defaultVariables: LoadPostsVariables = {
-    sort: ["AAAA-MM-DD"],
-    // pagination: { start: 0, limit: 10 },
-    start: 0,
-    limit: 10,
-  };
   const data = await request(cfg.graphqlURL, GRAPHQL_QUERY, {
-    ...defaultVariables,
+    ...defaultLoadPostsVariables,
     ...variables,
   });
 
