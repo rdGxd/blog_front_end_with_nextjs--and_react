@@ -3,7 +3,7 @@ import { StrapiSetting } from "@/types/StrapiSettings";
 import { Post } from "../../components/Post";
 import { Base } from "../Base";
 import * as Styled from "./styles";
-import { PostTags } from "@/components/PostTags";
+import { PostTags } from "../../components/PostTags";
 
 export type PostTemplateProps = {
   settings: StrapiSetting;

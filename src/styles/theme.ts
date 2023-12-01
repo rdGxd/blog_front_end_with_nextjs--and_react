@@ -1,4 +1,5 @@
 export const theme = {
+  name: "default",
   colors: {
     primary: "#000000",
     darkText: "#333333",
@@ -40,4 +41,4 @@ export const theme = {
     huge: "5.6rem",
     xhuge: "6.4rem",
   },
-} as const;
+};

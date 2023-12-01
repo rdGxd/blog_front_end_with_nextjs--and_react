@@ -1,5 +1,5 @@
-import { cfg } from "@/config";
-import { GRAPHQL_QUERY } from "@/graphql/queries";
+import { cfg } from "../config";
+import { GRAPHQL_QUERY } from "../graphql/queries";
 import { StrapiPost } from "@/types/StrapiPost";
 import { StrapiSetting } from "@/types/StrapiSettings";
 import { request } from "graphql-request";

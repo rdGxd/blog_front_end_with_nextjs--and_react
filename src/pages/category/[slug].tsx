@@ -40,6 +40,12 @@ export const getStaticProps: GetStaticProps<StrapiPostAndSettings> = async (ctx)
     data = null;
   }
 
+  if (!data.posts || !data.posts.data || !data.posts.data.length) {
+    return {
+      notFound: true,
+    };
+  }
+
   return {
     props: {
       posts: data.posts,
