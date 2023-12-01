@@ -1,7 +1,6 @@
 import { StrapiPost } from "@/types/StrapiPost";
 import { PostCard } from "../PostCard";
 import * as Styled from "./styles";
-import { title } from "process";
 
 export type PostGridProps = {
   posts?: StrapiPost[];
