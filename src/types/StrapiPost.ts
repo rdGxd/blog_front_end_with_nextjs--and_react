@@ -13,7 +13,7 @@ export type StrapiPost = {
 };
 
 export type StrapiPostAttributes = {
-  blogName: string;
+  blogName?: string;
   title?: string;
   slug?: string;
   excerpt?: string;

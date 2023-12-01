@@ -1,6 +1,5 @@
 import { Meta, StoryFn } from "@storybook/react";
-import { PostsTemplateProps } from ".";
-import { PostsTemplate } from "./PostsTemplate.1";
+import { PostsTemplate, PostsTemplateProps } from ".";
 import mock from "./mock";
 
 export default {

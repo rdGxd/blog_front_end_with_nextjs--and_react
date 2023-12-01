@@ -5,11 +5,11 @@ import * as Styled from "./styles";
 
 export type ArticleMetaProps = StrapiPost["attributes"];
 
-export const ArticleMeta = ({ createdAt, author = undefined, categories = [] }: ArticleMetaProps) => {
+export const ArticleMeta = ({ createdAt, author = undefined, categories }: ArticleMetaProps) => {
   return (
     <Styled.Wrapper>
       <p>
-        {typeof author !== "undefined" && (
+        {author && typeof author !== "undefined" && (
           <>
             <span>Por </span>
             <Link href={`/author/${author.data.attributes.slug}`}>{author.data.attributes.displayName}</Link>
@@ -19,7 +19,7 @@ export const ArticleMeta = ({ createdAt, author = undefined, categories = [] }: 
 
         <time dateTime={createdAt}>{formatDate(createdAt)}</time>
 
-        {categories.data.length > 0 && (
+        {categories && categories.data.length > 0 && (
           <>
             <span className="separator"> | </span>
             <span className="categories">

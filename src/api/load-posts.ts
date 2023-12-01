@@ -12,7 +12,7 @@ export type LoadPostsVariables = {
     eq: string;
   };
   postSearch?: {
-    eq: string;
+    contains: string;
   };
   authorSlug?: {
     eq: string;

@@ -5,7 +5,7 @@ const { categories, author, createdAt } = data.posts.data[0].attributes;
 
 const mockArticleMeta = {
   createdAt,
-  categories: categories.data,
+  categories,
   author,
 } as ArticleMetaProps;
 

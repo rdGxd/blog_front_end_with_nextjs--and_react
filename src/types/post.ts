@@ -1,5 +1,5 @@
 import { Author } from "./author";
-import { Category } from "./category";
+import { CategoryData } from "./category";
 import { Content } from "./content";
 import { Cover } from "./cover";
 import { PostTag } from "./tags";
@@ -16,7 +16,7 @@ export type PostData = {
     content: Content[];
     allowComments: boolean;
     cover: Cover;
-    categories: Category;
+    categories: CategoryData;
     tags: PostTag[];
     author: Author;
   };

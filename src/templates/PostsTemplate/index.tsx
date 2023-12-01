@@ -1,13 +1,13 @@
+import { StrapiPost } from "@/types/StrapiPost";
+import { StrapiSetting } from "@/types/StrapiSettings";
 import { useState } from "react";
 import { LoadPostsVariables, loadPosts } from "../../api/load-posts";
 import { PostGrid } from "../../components/PostGrid";
 import { Base } from "../Base";
 import * as Styled from "./styles";
-import { StrapiPost } from "@/types/StrapiPost";
-import { StrapiSetting } from "@/types/StrapiSettings";
 
 export type PostsTemplateProps = {
-  settings: StrapiSetting;
+  settings?: StrapiSetting;
   posts?: StrapiPost[];
   variables?: LoadPostsVariables;
 };
@@ -27,7 +27,8 @@ export const PostsTemplate = ({ settings, posts = [], variables }: PostsTemplate
       limit: stateVariables.limit,
     };
 
-    const morePosts = await loadPosts(newVariables);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const morePosts: any = await loadPosts(newVariables);
 
     if (!morePosts.posts || !morePosts.posts.data || !morePosts.posts.data.length) {
       setNoMorePosts(true);
@@ -42,11 +43,16 @@ export const PostsTemplate = ({ settings, posts = [], variables }: PostsTemplate
   return (
     <Base settings={settings}>
       <PostGrid posts={statePosts} />
-      <Styled.ButtonContainer>
-        <Styled.Button onClick={handleLoadMorePosts} disabled={buttonDisabled}>
-          {noMorePosts ? "Sem mais posts" : "Carregar mais"}
-        </Styled.Button>
-      </Styled.ButtonContainer>
+
+      {statePosts && statePosts.length ? (
+        <Styled.ButtonContainer>
+          <Styled.Button onClick={handleLoadMorePosts} disabled={buttonDisabled}>
+            {noMorePosts ? "Sem mais posts" : "Carregar mais"}
+          </Styled.Button>
+        </Styled.ButtonContainer>
+      ) : (
+        ""
+      )}
     </Base>
   );
 };
