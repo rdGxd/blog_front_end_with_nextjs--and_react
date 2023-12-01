@@ -1,4 +1,5 @@
 import { StrapiSetting } from "@/types/StrapiSettings";
+import { useRouter } from "next/router";
 import { Footer } from "../../components/Footer";
 import { GoTop } from "../../components/GoTop";
 import { Header } from "../../components/Header";
@@ -11,6 +12,8 @@ export type BaseProps = {
 };
 
 export const Base = ({ settings, children }: BaseProps) => {
+  const router = useRouter();
+
   return (
     <Styled.Wrapper>
       <Menu
@@ -25,7 +28,7 @@ export const Base = ({ settings, children }: BaseProps) => {
 
       <Styled.SearchContainer>
         <form action="/search/" method="GET">
-          <Styled.SearchInput type="search" placeholder="Encontre posts" name="q" />
+          <Styled.SearchInput type="search" placeholder="Encontre posts" name="q" defaultValue={router.query.q} />
         </form>
       </Styled.SearchContainer>
 
