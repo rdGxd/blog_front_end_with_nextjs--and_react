@@ -1,6 +1,7 @@
 import { StrapiPost } from "@/types/StrapiPost";
 import { PostCard } from "../PostCard";
 import * as Styled from "./styles";
+import { title } from "process";
 
 export type PostGridProps = {
   posts?: StrapiPost[];
@@ -14,16 +15,13 @@ export const PostGrid = ({ posts = [] }: PostGridProps) => {
       <Styled.Grid>
         {posts.length > 0 &&
           posts.map((post) => (
-            <>
-              {console.log(post.attributes.slug)}
-              <PostCard
-                key={post.attributes.slug}
-                cover={post.attributes.cover}
-                excerpt={post.attributes.excerpt}
-                slug={post.attributes.slug}
-                title={post.attributes.title}
-              />
-            </>
+            <PostCard
+              key={post.attributes.slug}
+              cover={post.attributes.cover}
+              excerpt={post.attributes.excerpt}
+              slug={post.attributes.slug}
+              title={post.attributes.title}
+            />
           ))}
       </Styled.Grid>
     </Styled.Wrapper>

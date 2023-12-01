@@ -1,4 +1,4 @@
-import { useContext, useEffect, useInsertionEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { BlogThemeContext } from "../../contexts/BlogThemeContext";
 import * as Styled from "./styles";
 
@@ -6,7 +6,7 @@ export const ToggleTheme = () => {
   const { setTheme } = useContext(BlogThemeContext);
   const [checked, setChecked] = useState(false);
 
-  useInsertionEffect(() => {
+  useEffect(() => {
     const localTheme = localStorage.getItem("theme");
     if (!localTheme) return;
     const newTheme = JSON.parse(localTheme);
