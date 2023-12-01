@@ -1,6 +1,6 @@
 export const cfg = {
-  url: "https://strapi-v4-test.herokuapp.com/api/pages/?populate=deep&",
-  siteName: "Otávio Miranda",
+  url: "https://landing-pages-strapi-api.onrender.com/api/pages/?populate=deep",
+  siteName: "Rodrigo Silva",
   defaultSlug: "landing-page",
-  graphqlURL: "http://localhost:1337/graphql",
+  graphqlURL: "https://strapi-blog-b3lf.onrender.com/graphql",
 };
