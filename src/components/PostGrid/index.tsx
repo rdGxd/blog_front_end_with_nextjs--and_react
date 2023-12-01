@@ -15,6 +15,7 @@ export const PostGrid = ({ posts = [] }: PostGridProps) => {
         {posts.length > 0 &&
           posts.map((post) => (
             <>
+              {console.log(post.attributes.slug)}
               <PostCard
                 key={post.attributes.slug}
                 cover={post.attributes.cover}

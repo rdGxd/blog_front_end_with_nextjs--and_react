@@ -1,3 +1,4 @@
+import { ToggleTheme } from "../../components/ToggleTheme";
 import { StrapiSetting } from "@/types/StrapiSettings";
 import { useRouter } from "next/router";
 import { Footer } from "../../components/Footer";
@@ -16,6 +17,7 @@ export const Base = ({ settings, children }: BaseProps) => {
 
   return (
     <Styled.Wrapper>
+      <ToggleTheme />
       <Menu
         menuLink={settings.data.attributes.menuLink}
         blogName={settings.data.attributes.blogName}

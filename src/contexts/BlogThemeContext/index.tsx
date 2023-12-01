@@ -1,4 +1,4 @@
-import { ReactNode, createContext, useEffect, useState } from "react";
+import { ReactNode, createContext, useCallback, useEffect, useState } from "react";
 import { DefaultTheme, ThemeProvider } from "styled-components";
 import { theme } from "../../styles/theme";
 
@@ -26,7 +26,7 @@ export const BlogThemeProvider = ({ children }: BlogThemeProviderProps) => {
     setBlogTheme(newTheme);
   }, []);
 
-  const handleSetTheme: BlogThemeContextValues["setTheme"] = (mode = "default") => {
+  const handleSetTheme: BlogThemeContextValues["setTheme"] = useCallback((mode = "default") => {
     if (mode === "default") {
       setBlogTheme(theme);
       localStorage.setItem("theme", JSON.stringify(theme));
@@ -46,7 +46,7 @@ export const BlogThemeProvider = ({ children }: BlogThemeProviderProps) => {
       setBlogTheme(newTheme);
       localStorage.setItem("theme", JSON.stringify(newTheme));
     }
-  };
+  }, []);
 
   return (
     <BlogThemeContext.Provider value={{ theme: blogTheme, setTheme: handleSetTheme }}>
