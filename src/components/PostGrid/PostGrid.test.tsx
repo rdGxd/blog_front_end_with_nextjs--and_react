@@ -1,18 +1,20 @@
 import { screen } from "@testing-library/react";
-import { PostGrid } from ".";
 import { renderTheme } from "../../styles/render-theme";
+import { PostGrid, PostGridProps } from ".";
 
-import mockPostGrid from "./mock";
+import mock from "./mock";
+
+const props: PostGridProps = mock;
 
 describe("<PostGrid />", () => {
   it("should not render posts", () => {
-    renderTheme(<PostGrid {...mockPostGrid} posts={undefined} />);
+    renderTheme(<PostGrid {...props} posts={undefined} />);
 
-    expect(screen.getByText(/Nenhum Post/i)).toBeInTheDocument();
+    expect(screen.getByText(/Nenhum post/i)).toBeInTheDocument();
   });
 
   it("should render three posts", () => {
-    const { container } = renderTheme(<PostGrid {...mockPostGrid} />);
+    const { container } = renderTheme(<PostGrid {...props} />);
 
     expect(screen.queryByText(/Nenhum post/i)).not.toBeInTheDocument();
 
@@ -22,7 +24,7 @@ describe("<PostGrid />", () => {
   });
 
   it("should match snapshot", () => {
-    const { container } = renderTheme(<PostGrid {...mockPostGrid} />);
+    const { container } = renderTheme(<PostGrid {...props} />);
     expect(container).toMatchSnapshot();
   });
 });
