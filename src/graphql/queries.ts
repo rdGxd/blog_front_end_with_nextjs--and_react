@@ -35,6 +35,7 @@ export const GRAPHQL_QUERY = gql`
       pagination: { start: $start, limit: $limit }
     ) {
       data {
+        id
         attributes {
           ...post
         }
