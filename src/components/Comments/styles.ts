@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   ${({ theme }) => css`
     max-width: ${theme.sizes.content};
     width: 100%;
-    margin: ${theme.spacings.large} 0 auto;
+    margin: ${theme.spacings.large} auto;
     padding: 0 ${theme.spacings.large};
   `}
 `;
