@@ -9,7 +9,7 @@ import * as Styled from "./styles";
 export type PostTemplateProps = {
   settings: StrapiSetting;
   post?: {
-    id: string;
+    id?: string;
     attributes?: StrapiPostAttributes;
   };
 };
