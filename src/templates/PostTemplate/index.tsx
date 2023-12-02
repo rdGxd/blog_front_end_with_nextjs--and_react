@@ -1,9 +1,9 @@
-import { StrapiPostAttributes } from "@/types/StrapiPost";
-import { StrapiSetting } from "@/types/StrapiSettings";
+import { StrapiPostAttributes } from "@/shared-types/StrapiPost";
+import { StrapiSetting } from "@/shared-types/StrapiSettings";
 import { Post } from "../../components/Post";
+import { PostTags } from "../../components/PostTags";
 import { Base } from "../Base";
 import * as Styled from "./styles";
-import { PostTags } from "../../components/PostTags";
 
 export type PostTemplateProps = {
   settings: StrapiSetting;

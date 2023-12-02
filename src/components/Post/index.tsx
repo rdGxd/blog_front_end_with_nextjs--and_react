@@ -1,4 +1,4 @@
-import { StrapiPostAttributes } from "@/types/StrapiPost";
+import { StrapiPostAttributes } from "@/shared-types/StrapiPost";
 import { ArticleHeader } from "../ArticleHeader";
 import { HtmlContent } from "../HtmlContent";
 import { PostContainer } from "../PostContainer";

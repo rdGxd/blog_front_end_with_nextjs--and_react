@@ -1,5 +1,5 @@
-import { StrapiPost } from "@/types/StrapiPost";
-import { StrapiSetting } from "@/types/StrapiSettings";
+import { StrapiPost } from "@/shared-types/StrapiPost";
+import { StrapiSetting } from "@/shared-types/StrapiSettings";
 import { useState } from "react";
 import { LoadPostsVariables, loadPosts } from "../../api/load-posts";
 import { PostGrid } from "../../components/PostGrid";

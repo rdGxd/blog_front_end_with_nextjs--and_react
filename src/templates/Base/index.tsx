@@ -1,4 +1,4 @@
-import { StrapiSetting } from "@/types/StrapiSettings";
+import { StrapiSetting } from "@/shared-types/StrapiSettings";
 import { useRouter } from "next/router";
 import { Footer } from "../../components/Footer";
 import { GoTop } from "../../components/GoTop";

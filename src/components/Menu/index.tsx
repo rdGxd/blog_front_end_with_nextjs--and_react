@@ -1,10 +1,10 @@
-import { MenuPropsLinks } from "@/types/menu-props-links";
+import { LogoSetting } from "@/shared-types/StrapiSettings";
+import { MenuPropsLinks } from "@/shared-types/menu-props-links";
 import { Close as CloseIcon, Menu as MenuIcon } from "@styled-icons/material-outlined";
 import { useState } from "react";
 import { LogoLink } from "../LogoLink";
 import { MenuLink } from "../MenuLink";
 import * as Styled from "./styles";
-import { LogoSetting } from "@/types/StrapiSettings";
 
 export type MenuProps = {
   blogName: string;

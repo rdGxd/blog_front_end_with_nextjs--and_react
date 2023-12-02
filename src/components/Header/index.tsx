@@ -1,4 +1,4 @@
-import { StrapiSettingAttributes } from "@/types/StrapiSettings";
+import { StrapiSettingAttributes } from "@/shared-types/StrapiSettings";
 import { Heading } from "../Heading";
 import { LogoLink } from "../LogoLink";
 import * as Styled from "./styles";

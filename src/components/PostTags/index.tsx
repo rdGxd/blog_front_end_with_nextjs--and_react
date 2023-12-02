@@ -1,6 +1,6 @@
 import Link from "next/link";
+import { StrapiPostAttributes } from "../../shared-types/StrapiPost";
 import * as Styled from "./styles";
-import { StrapiPostAttributes } from "../../types/StrapiPost";
 
 export type PostTagsProps = {
   tags?: StrapiPostAttributes["tags"];

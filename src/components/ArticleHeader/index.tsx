@@ -1,4 +1,4 @@
-import { StrapiPost } from "@/types/StrapiPost";
+import { StrapiPost } from "@/shared-types/StrapiPost";
 import { ArticleMeta } from "../ArticleMeta";
 import { Heading } from "../Heading";
 import * as Styled from "./styles";

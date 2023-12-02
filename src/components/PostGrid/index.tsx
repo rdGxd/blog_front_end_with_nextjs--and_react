@@ -1,4 +1,4 @@
-import { StrapiPost } from "@/types/StrapiPost";
+import { StrapiPost } from "@/shared-types/StrapiPost";
 import { PostCard } from "../PostCard";
 import * as Styled from "./styles";
 
