@@ -1,0 +1,118 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<ArticleHeader /> > should render heading, excerpt, cover img and meta 1`] = `
+.c5 {
+  font-size: 1.6rem;
+  color: #AAAAAA;
+  font-style: italic;
+}
+
+.c5 .categories span::after {
+  content: ", ";
+}
+
+.c5 .categories span:last-child::after {
+  content: "";
+}
+
+.c5 a:hover {
+  filter: brightness(50%);
+}
+
+.c2 {
+  color: #000000;
+  line-height: 1.2;
+  font-size: 6.4rem;
+  text-transform: none;
+}
+
+.c0 {
+  padding-bottom: 4.0rem;
+  margin-bottom: 4.0rem;
+  border-bottom: 0.1rem solid #DDDDDD;
+}
+
+.c0 .c1 {
+  margin: 0;
+  margin-bottom: 2.4rem;
+}
+
+.c3 {
+  margin: 2.4rem 0;
+  font-size: 2.4rem;
+}
+
+.c4 {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 768px) {
+  .c2 {
+    font-size: 4.0rem;
+  }
+}
+
+<div>
+  <header
+    class="c0"
+  >
+    <h1
+      class="c1 c2"
+    >
+      6PAPAPA
+    </h1>
+    <p
+      class="c3"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <img
+      alt="6PAPAPA"
+      class="c4"
+      src="https://res.cloudinary.com/dccldzodg/image/upload/v1700490199/360_F_571067620_JS_5_T5_Tk_Dtu3gf8_Wqm78_Ko_JRF_1vob_Pvo6_1dff1a52c6.jpg"
+    />
+    <div
+      class="c5"
+    >
+      <p>
+        <span>
+          Por 
+        </span>
+        <a
+          href="/author/rodrigo-silva"
+        >
+          Rodrigo Silva
+        </a>
+        <span
+          class="separator"
+        >
+           | 
+        </span>
+        <time
+          datetime="2023-11-20T14:26:29.353Z"
+        >
+          20 de nov. de 2023
+        </time>
+        <span
+          class="separator"
+        >
+           | 
+        </span>
+        <span
+          class="categories"
+        >
+          <span>
+            <a
+              href="/category/python"
+            >
+              Python
+            </a>
+          </span>
+        </span>
+      </p>
+    </div>
+  </header>
+</div>
+`;

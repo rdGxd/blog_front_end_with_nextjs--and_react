@@ -15,11 +15,11 @@ export const PostGrid = ({ posts = [] }: PostGridProps) => {
         {posts.length > 0 &&
           posts.map((post) => (
             <PostCard
-              key={post.attributes.slug}
-              cover={post.attributes.cover}
-              excerpt={post.attributes.excerpt}
-              slug={post.attributes.slug}
-              title={post.attributes.title}
+              key={post.attributes?.slug}
+              cover={post.attributes?.cover}
+              excerpt={post.attributes?.excerpt}
+              slug={post.attributes?.slug}
+              title={post.attributes?.title}
             />
           ))}
       </Styled.Grid>

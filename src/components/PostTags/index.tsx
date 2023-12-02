@@ -7,14 +7,14 @@ export type PostTagsProps = {
 };
 
 export const PostTags = ({ tags }: PostTagsProps) => {
-  if (tags.data.length === 0) return null;
+  if (tags?.data.length === 0) return null;
 
   return (
     <Styled.Wrapper>
       tags:{" "}
-      {tags.data.map((tag) => (
-        <span key={tag.id}>
-          <Link href={`/tag/${tag.attributes.slug}`}>{tag.attributes.displayName}</Link>
+      {tags?.data.map((tag) => (
+        <span key={tag?.id}>
+          <Link href={`/tag/${tag?.attributes.slug}`}>{tag?.attributes.displayName}</Link>
         </span>
       ))}
     </Styled.Wrapper>
