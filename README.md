@@ -1,28 +1,34 @@
-## 💻 Projeto
+# Projeto de Blog pessoal para consumir uma [API](https://github.com/rdGxd/Strapi_Blog) com NextJS
 
-Um blog pessoal para publicaçÕes de artigos
+## Tecnologias utilizadas
 
----
+- NextJS 14
+- Typescript
+- Styled-components
+- Styled Icons
+- Disqus
+- GraphQL
 
-## 💻 Tecnologias Usadas
+## Funcionalidades adicionais
 
-### Back-end
+-
 
-Aqui é onde eu construir a API e falo sobre as tecnologias usadas: [API](https://github.com/rdGxd/Strapi_Blog)
+## Como rodar o projeto
 
-### Front-end
+- Clone o repositório
 
-React + Next.js <br/>
-Styled Componentes <br/>
-GraphQL <br/>
-Styled Icons <br/>
+## Comandos Linux:
 
----
+Você pode usar o comando completo abaixo para rodar o projeto no Linux:
 
-## Próximos passos (Desafios)
+```bash
+npm install && npm run dev
+```
 
----
+## Comandos Windows:
 
-## 📝 Licença
+Você pode usar o comando completo abaixo para rodar o projeto no Windows:
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+```bash
+npm install && npm run dev
+```

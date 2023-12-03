@@ -1,6 +1,6 @@
 import { StrapiPost } from "@/shared-types/StrapiPost";
 import { StrapiSetting } from "@/shared-types/StrapiSettings";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { LoadPostsVariables, loadPosts } from "../../api/load-posts";
 import { PostGrid } from "../../components/PostGrid";
 import { Base } from "../Base";
@@ -17,6 +17,13 @@ export const PostsTemplate = ({ settings, posts = [], variables }: PostsTemplate
   const [stateVariables, setStateVariables] = useState(variables);
   const [buttonDisabled, setButtonDisabled] = useState(false);
   const [noMorePosts, setNoMorePosts] = useState(false);
+
+  useEffect(() => {
+    setStatePosts(posts);
+    setStateVariables(variables);
+    setNoMorePosts(false);
+    setButtonDisabled(false);
+  }, [posts, variables]);
 
   const handleLoadMorePosts = async () => {
     setButtonDisabled(true);

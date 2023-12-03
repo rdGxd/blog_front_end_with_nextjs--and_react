@@ -27,7 +27,7 @@ export const GRAPHQL_QUERY = gql`
       sort: $sort
       filters: {
         slug: $postSlug
-        title: $postSearch
+        or: [{ title: $postSearch }, { excerpt: $postSearch }]
         categories: { slug: $categorySlug }
         author: { slug: $authorSlug }
         tags: { slug: $tagSlug }
