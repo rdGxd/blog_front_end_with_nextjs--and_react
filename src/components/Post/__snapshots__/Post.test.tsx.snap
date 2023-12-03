@@ -314,6 +314,10 @@ exports[`<Post /> > should render header, excerpt, cover, metadata and post 1`] 
   font-size: 2.4rem;
 }
 
+.c9 iframe[src*="ads"] {
+  display: none;
+}
+
 .c9 p {
   margin: 2.4rem 0;
 }

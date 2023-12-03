@@ -267,6 +267,10 @@ exports[`<Footer /> > should render 1`] = `
   font-size: 2.4rem;
 }
 
+.c3 iframe[src*="ads"] {
+  display: none;
+}
+
 .c3 p {
   margin: 2.4rem 0;
 }

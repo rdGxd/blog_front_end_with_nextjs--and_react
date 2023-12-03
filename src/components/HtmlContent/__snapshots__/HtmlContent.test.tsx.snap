@@ -267,6 +267,10 @@ exports[`<HtmlContent /> > should match snapshot 1`] = `
   font-size: 2.4rem;
 }
 
+.c1 iframe[src*="ads"] {
+  display: none;
+}
+
 .c1 p {
   margin: 2.4rem 0;
 }
